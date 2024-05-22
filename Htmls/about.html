@@ -1,0 +1,723 @@
+<!-- /**
+ * Title: 'This is NYC-Thist Home page. Ui develop By Masum Rana. '
+ * Description: ''
+ * Author: 'Masum Rana'
+ * Email: 'masum.rana6267@gmail.com'
+ * Date: 21-05-2024
+ *
+*/ -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Tailwind css cdn -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- custom css -->
+    <link rel="stylesheet" href="../CSS/style.css" />
+
+    <!-- google font Roboto Condensed & Lato   -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..800;1,400..800&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..800;1,400..800&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+
+    <!--Owl Carousel  -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"
+    />
+
+    <title>About Us-NYC-Thists</title>
+  </head>
+  <body class="bg-[#e38509]">
+    <!-- HEADER SECTION  -->
+    <header>
+      <!-- navigation section  -->
+      <section class="bg-[#f9f9f9]">
+        <!-- destop Navbar -->
+        <nav
+          class="container mx-auto hidden lg:flex items-center gap-10 bg-white px-20 py-6"
+        >
+          <!-- logo section  -->
+          <section>
+            <img class="w-32" src="../assets/Logo.png" alt="Nyc-Thists logo" />
+          </section>
+          <!-- Nav part-->
+          <section>
+            <!-- nav upper part -->
+            <div class="flex items-center gap-10">
+              <a class="hover:text-[#e38509]" href="/">HOME</a>
+              <a class="hover:text-[#e38509]" href="/">EVENT</a>
+              <a class="hover:text-[#e38509]" href="/">NEIGHBORHOODS</a>
+              <a class="hover:text-[#e38509]" href="/">BAR TYPE</a>
+              <a class="hover:text-[#e38509]" href="/">NEWS</a>
+              <a class="hover:text-[#e38509]" href="/">JOB BORAD</a>
+              <a class="hover:text-[#e38509]" href="/">ABOUT</a>
+              <a class="hover:text-[#e38509]" href="/">CONTACT US</a>
+            </div>
+            <!-- nav lower part -->
+            <div class="flex gap-8 items-center mt-3">
+              <!-- dropdown  1 -->
+              <div class="] relative group">
+                <button
+                  class="flex items-center gap-1 group-hover:text-[#700000] transition-color duration-300"
+                >
+                  BROOKLYN
+                  <svg
+                    fill=""
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="15"
+                    height="15"
+                    fill="#000000"
+                    viewBox="0 0 256 256"
+                  >
+                    <path
+                      d="M213.66,101.66l-80,80a8,8,0,0,1-11.32,0l-80-80A8,8,0,0,1,53.66,90.34L128,164.69l74.34-74.35a8,8,0,0,1,11.32,11.32Z"
+                    ></path>
+                  </svg>
+                </button>
+                <!-- dropdown 1 items -->
+                <div
+                  class="absolute group-hover:border-t-2 hidden group-hover:block border-[#700000] w-[16rem] bg-white text-sm top-7"
+                >
+                  <div
+                    class="py-2 border-y px-3 transition-color duration-300 hover:text-[#700000]"
+                  >
+                    <a href=""> BROOKLYN EVENTS</a>
+                  </div>
+                  <div
+                    class="py-2 border-y px-3 transition-color duration-300 hover:text-[#700000]"
+                  >
+                    <a href=""> BROOKLYN NEIGHBORHOODS</a>
+                  </div>
+                  <div
+                    class="py-2 border-y px-3 transition-color duration-300 hover:text-[#700000]"
+                  >
+                    <a href=""> BROOKLYN BARS BY TYPE</a>
+                  </div>
+                </div>
+              </div>
+
+              <!-- dropdown 2 -->
+              <div class="] relative group">
+                <button
+                  class="flex items-center gap-1 group-hover:text-[#700000] transition-color duration-300"
+                >
+                  MANHATTAN
+                  <svg
+                    fill=""
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="15"
+                    height="15"
+                    fill="#000000"
+                    viewBox="0 0 256 256"
+                  >
+                    <path
+                      d="M213.66,101.66l-80,80a8,8,0,0,1-11.32,0l-80-80A8,8,0,0,1,53.66,90.34L128,164.69l74.34-74.35a8,8,0,0,1,11.32,11.32Z"
+                    ></path>
+                  </svg>
+                </button>
+                <!-- dropdown 1 items -->
+                <div
+                  class="absolute group-hover:border-t-2 hidden group-hover:block border-[#700000] w-[16rem] bg-white text-sm top-7"
+                >
+                  <div
+                    class="py-2 border-y px-3 transition-color duration-300 hover:text-[#700000]"
+                  >
+                    <a href=""> BROOKLYN EVENTS</a>
+                  </div>
+                  <div
+                    class="py-2 border-y px-3 transition-color duration-300 hover:text-[#700000]"
+                  >
+                    <a href=""> BROOKLYN NEIGHBORHOODS</a>
+                  </div>
+                  <div
+                    class="py-2 border-y px-3 transition-color duration-300 hover:text-[#700000]"
+                  >
+                    <a href=""> BROOKLYN BARS BY TYPE</a>
+                  </div>
+                </div>
+              </div>
+
+              <!-- dropdown 3 -->
+              <div class="] relative group">
+                <button
+                  class="flex items-center gap-1 group-hover:text-[#700000] transition-color duration-300"
+                >
+                  QUEENS
+                  <svg
+                    fill=""
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="15"
+                    height="15"
+                    fill="#000000"
+                    viewBox="0 0 256 256"
+                  >
+                    <path
+                      d="M213.66,101.66l-80,80a8,8,0,0,1-11.32,0l-80-80A8,8,0,0,1,53.66,90.34L128,164.69l74.34-74.35a8,8,0,0,1,11.32,11.32Z"
+                    ></path>
+                  </svg>
+                </button>
+                <!-- dropdown 1 items -->
+                <div
+                  class="absolute group-hover:border-t-2 hidden group-hover:block border-[#700000] w-[16rem] bg-white text-sm top-7"
+                >
+                  <div
+                    class="py-2 border-y px-3 transition-color duration-300 hover:text-[#700000]"
+                  >
+                    <a href=""> BROOKLYN EVENTS</a>
+                  </div>
+                  <div
+                    class="py-2 border-y px-3 transition-color duration-300 hover:text-[#700000]"
+                  >
+                    <a href=""> BROOKLYN NEIGHBORHOODS</a>
+                  </div>
+                  <div
+                    class="py-2 border-y px-3 transition-color duration-300 hover:text-[#700000]"
+                  >
+                    <a href=""> BROOKLYN BARS BY TYPE</a>
+                  </div>
+                </div>
+              </div>
+              <!-- dropdown 4 -->
+              <div class="] relative group">
+                <button
+                  class="flex items-center gap-1 group-hover:text-[#700000] transition-color duration-300"
+                >
+                  STATEN ISLAND
+                  <svg
+                    fill=""
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="15"
+                    height="15"
+                    fill="#000000"
+                    viewBox="0 0 256 256"
+                  >
+                    <path
+                      d="M213.66,101.66l-80,80a8,8,0,0,1-11.32,0l-80-80A8,8,0,0,1,53.66,90.34L128,164.69l74.34-74.35a8,8,0,0,1,11.32,11.32Z"
+                    ></path>
+                  </svg>
+                </button>
+                <!-- dropdown 1 items -->
+                <div
+                  class="absolute group-hover:border-t-2 hidden group-hover:block border-[#700000] w-[16rem] bg-white text-sm top-7"
+                >
+                  <div
+                    class="py-2 border-y px-3 transition-color duration-300 hover:text-[#700000]"
+                  >
+                    <a href=""> BROOKLYN EVENTS</a>
+                  </div>
+                  <div
+                    class="py-2 border-y px-3 transition-color duration-300 hover:text-[#700000]"
+                  >
+                    <a href=""> BROOKLYN NEIGHBORHOODS</a>
+                  </div>
+                  <div
+                    class="py-2 border-y px-3 transition-color duration-300 hover:text-[#700000]"
+                  >
+                    <a href=""> BROOKLYN BARS BY TYPE</a>
+                  </div>
+                </div>
+              </div>
+              <!-- dropdown 5 -->
+              <div class="] relative group">
+                <button
+                  class="flex items-center gap-1 group-hover:text-[#700000] transition-color duration-300"
+                >
+                  THE BRONX
+                  <svg
+                    fill=""
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="15"
+                    height="15"
+                    fill="#000000"
+                    viewBox="0 0 256 256"
+                  >
+                    <path
+                      d="M213.66,101.66l-80,80a8,8,0,0,1-11.32,0l-80-80A8,8,0,0,1,53.66,90.34L128,164.69l74.34-74.35a8,8,0,0,1,11.32,11.32Z"
+                    ></path>
+                  </svg>
+                </button>
+                <!-- dropdown 1 items -->
+                <div
+                  class="absolute group-hover:border-t-2 hidden group-hover:block border-[#700000] w-[16rem] bg-white text-sm top-7"
+                >
+                  <div
+                    class="py-2 border-y px-3 transition-color duration-300 hover:text-[#700000]"
+                  >
+                    <a href=""> BROOKLYN EVENTS</a>
+                  </div>
+                  <div
+                    class="py-2 border-y px-3 transition-color duration-300 hover:text-[#700000]"
+                  >
+                    <a href=""> BROOKLYN NEIGHBORHOODS</a>
+                  </div>
+                  <div
+                    class="py-2 border-y px-3 transition-color duration-300 hover:text-[#700000]"
+                  >
+                    <a href=""> BROOKLYN BARS BY TYPE</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+        </nav>
+
+        <!-- mobile or tablet navbar  -->
+        <nav
+          class="flex justify-between items-center bg-gray-100 md:hidden py-2"
+        >
+          <div class="flex-1 flex justify-center">
+            <img class="w-28" src="../assets/Logo.png" alt="Nyc-Thists logo" />
+          </div>
+          <div>
+            <button
+              onclick="toggleMobNavDropdown()"
+              class="absolute right-4 top-8 bg-[#700000] p-1"
+              id="menu-icon"
+            >
+              <svg
+                id="svg_toggle_icon"
+                xmlns="http://www.w3.org/2000/svg"
+                width="20"
+                height="20"
+                fill="white"
+                viewBox="0 0 256 256"
+              >
+                <path
+                  d="M224,128a8,8,0,0,1-8,8H40a8,8,0,0,1,0-16H216A8,8,0,0,1,224,128ZM40,72H216a8,8,0,0,0,0-16H40a8,8,0,0,0,0,16ZM216,184H40a8,8,0,0,0,0,16H216a8,8,0,0,0,0-16Z"
+                ></path>
+              </svg>
+            </button>
+          </div>
+        </nav>
+
+        <!-- Mobile navbar content -->
+        <div
+          id="navbar_dropdown"
+          class="hidden h-auto w-full border right-0 left-0 absolute lg:hidden text-xs pb-5 bg-gray-100"
+        >
+          <div class="flex flex-col">
+            <!-- <a class="hover:text-[#e38509] bg-gray-200 px-5 border-y-2 border-gray-500 py-2" href="/">HOME</a> -->
+            <a
+              class="hover:text-[#e38509] bg-gray-100 px-5 border-y-2 border-gray-300 py-1 text-gray-700 font-semibold"
+              href="/"
+              >EVENT</a
+            >
+            <a
+              class="hover:text-[#e38509] bg-gray-100 px-5 border-b-2 border-gray-300 py-1 text-gray-700 font-semibold"
+              href="/"
+              >NEIGHBORHOODS</a
+            >
+            <a
+              class="hover:text-[#e38509] bg-gray-100 px-5 border-b-2 border-gray-300 py-1 text-gray-700 font-semibold"
+              href="/"
+              >BAR TYPE</a
+            >
+            <a
+              class="hover:text-[#e38509] bg-gray-100 px-5 border-b-2 border-gray-300 py-1 text-gray-700 font-semibold"
+              href="/"
+              >NEWS</a
+            >
+            <a
+              class="hover:text-[#e38509] bg-gray-100 px-5 border-b-2 border-gray-300 py-1 text-gray-700 font-semibold"
+              href="/"
+              >JOB BORAD</a
+            >
+            <a
+              c
+              class="hover:text-[#e38509] bg-gray-100 px-5 border-b-2 border-gray-300 py-1 text-gray-700 font-semibold"
+              href="/"
+              >ABOUT</a
+            >
+            <a
+              class="hover:text-[#e38509] bg-gray-100 px-5 border-b-2 border-gray-300 py-1 text-gray-700 font-semibold"
+              href="/"
+              >CONTACT US</a
+            >
+          </div>
+
+          <div class="flex flex-col">
+            <!-- dropdown  1 -->
+            <div class="] relative group bg-gray-100">
+              <button
+                id="dropdown_1_btn"
+                onclick="toogleMobileNavbarDropdown1()"
+                class="px-5 border-gray-300 py-1 text-gray-700 font-semibold flex items-center gap-1"
+              >
+                BROOKLYN
+                <svg
+                  fill=""
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="15"
+                  height="15"
+                  fill="#000000"
+                  viewBox="0 0 256 256"
+                >
+                  <path
+                    d="M213.66,101.66l-80,80a8,8,0,0,1-11.32,0l-80-80A8,8,0,0,1,53.66,90.34L128,164.69l74.34-74.35a8,8,0,0,1,11.32,11.32Z"
+                  ></path>
+                </svg>
+              </button>
+              <!-- dropdown 1  content -->
+              <div
+                id="dropdown_1_content_1"
+                class="border-t-2 transition-color duration-300 w-full bg-gray-100 text-sm bg-gray-100 hidden text-xs"
+              >
+                <!-- dropdown  Content 1 -->
+                <div
+                  class="py-2 border-t-2 pl-12 transition-color duration-300 hover:text-[#700000] px-5 border-gray-300 py-1 text-gray-700 font-semibold bg-gray-100"
+                >
+                  <a href=""> BROOKLYN EVENTS</a>
+                </div>
+                <!-- dropdown  Content 2 -->
+                <div
+                  class="py-2 border-t-2 pl-12 transition-color duration-300 hover:text-[#700000] px-5 border-gray-300 py-1 text-gray-700 font-semibold bg-gray-100 text-xs"
+                >
+                  <a href=""> BROOKLYN NEIGHBORHOODS</a>
+                </div>
+
+                <!-- dropdown content 3 -->
+                <div
+                  class="py-2 border-y-2 pl-12 transition-color duration-300 hover:text-[#700000] px-5 border-gray-300 py-1 text-gray-700 font-semibold bg0gray-100 text-xs"
+                >
+                  <a href=""> BROOKLYN BARS BY TYPE</a>
+                </div>
+              </div>
+            </div>
+
+            <!-- dropdown  2 -->
+            <div
+              class="] relative group bg-gray-100 border-t-2 border-gray-300"
+            >
+              <button
+                id="dropdown_2_btn"
+                onclick="toogleMobileNavbarDropdown2()"
+                class="px-5 border-gray-300 py-1 text-gray-700 font-semibold flex items-center gap-1"
+              >
+                MANHATTAN
+                <svg
+                  fill=""
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="15"
+                  height="15"
+                  fill="#000000"
+                  viewBox="0 0 256 256"
+                >
+                  <path
+                    d="M213.66,101.66l-80,80a8,8,0,0,1-11.32,0l-80-80A8,8,0,0,1,53.66,90.34L128,164.69l74.34-74.35a8,8,0,0,1,11.32,11.32Z"
+                  ></path>
+                </svg>
+              </button>
+
+              <!-- dropdown 1  content -->
+              <div
+                id="dropdown_2_content_1"
+                class="border-t-2 transition-color duration-300 w-full bg-gray-100 text-sm bg-gray-100 hidden"
+              >
+                <!-- dropdown  Content 1 -->
+                <div
+                  class="py-2 border-t-2 pl-12 transition-color duration-300 hover:text-[#700000] px-5 border-gray-300 py-1 text-gray-700 font-semibold bg-gray-100 text-xs"
+                >
+                  <a href=""> BROOKLYN EVENTS</a>
+                </div>
+                <!-- dropdown  Content 2 -->
+                <div
+                  class="py-2 border-t-2 pl-12 transition-color duration-300 hover:text-[#700000] px-5 border-gray-300 py-1 text-gray-700 font-semibold bg-gray-100 text-xs"
+                >
+                  <a href=""> BROOKLYN NEIGHBORHOODS</a>
+                </div>
+
+                <!-- dropdown content 3 -->
+                <div
+                  class="py-2 border-y-2 pl-12 transition-color duration-300 hover:text-[#700000] px-5 border-gray-300 py-1 text-gray-700 font-semibold bg0gray-100 text-xs"
+                >
+                  <a href=""> BROOKLYN BARS BY TYPE</a>
+                </div>
+              </div>
+            </div>
+
+            <!-- dropdown  3 -->
+            <div class="relative group bg-gray-100 border-t-2 border-gray-300">
+              <button
+                id="dropdown_3_btn"
+                onclick="toogleMobileNavbarDropdown3()"
+                class="px-5 border-gray-300 py-1 text-gray-700 font-semibold flex items-center gap-1"
+              >
+                THE BRONX
+                <svg
+                  fill=""
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="15"
+                  height="15"
+                  fill="#000000"
+                  viewBox="0 0 256 256"
+                >
+                  <path
+                    d="M213.66,101.66l-80,80a8,8,0,0,1-11.32,0l-80-80A8,8,0,0,1,53.66,90.34L128,164.69l74.34-74.35a8,8,0,0,1,11.32,11.32Z"
+                  ></path>
+                </svg>
+              </button>
+              <!-- dropdown 1  content -->
+              <div
+                id="dropdown_3_content_1"
+                class="border-t-2 transition-color duration-300 w-full bg-gray-100 text-sm bg-gray-100 hidden"
+              >
+                <!-- dropdown  Content 1 -->
+                <div
+                  class="py-2 border-t-2 pl-12 transition-color duration-300 hover:text-[#700000] px-5 border-gray-300 py-1 text-gray-700 font-semibold bg-gray-100 text-xs"
+                >
+                  <a href=""> BROOKLYN EVENTS</a>
+                </div>
+                <!-- dropdown  Content 2 -->
+                <div
+                  class="py-2 border-t-2 pl-12 transition-color duration-300 hover:text-[#700000] px-5 border-gray-300 py-1 text-gray-700 font-semibold bg-gray-100 text-xs"
+                >
+                  <a href=""> BROOKLYN NEIGHBORHOODS</a>
+                </div>
+
+                <!-- dropdown content 3 -->
+                <div
+                  class="py-2 border-y-2 pl-12 transition-color duration-300 hover:text-[#700000] px-5 border-gray-300 py-1 text-gray-700 font-semibold bg0gray-100 text-xs"
+                >
+                  <a href=""> BROOKLYN BARS BY TYPE</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="flex items-center justify-center lg:py-5 py-2">
+        <img
+          class="lg:w-96 lg:h-52 w-52"
+          src="../assets/Logo.png"
+          alt="Nyc-Thists logo"
+        />
+      </section>
+    </header>
+
+    <!-- HOME PAGE CONTENT SECTION -->
+    <div class="container mx-auto bg-[#f4f4f4] p-5">
+      <!-- ADVERTISMENT SECTION  -->
+      <section
+        class="w-[300px] h-[250px] md:w-[728px] lg:w-[970px] md:h-[90px] border border-black mx-auto flex justify-center items-center"
+      >
+        <h3 class="">ADS</h3>
+      </section>
+
+      <!-- ABOUT US SECTION  -->
+      <div class="p-8">
+        <section class="mb-8">
+            <!-- PAGE TITLE -->
+          <h1 class="text-3xl font-bold mb-4">About Us</h1>
+          <p class="text-base mb-4">
+            NYCThirst is the bar culture guide for the five boroughs of New York
+            City. We have a detailed page for every drinking establishment in
+            New York City. Our job is to give the user / visitor the best
+            information we can gather about a drinking establishment.
+          </p>
+          <p class="text-base mb-4">
+            We plan on being a hyper local business forward website. If you have
+            trivia night, we would like to tell our users about it. If you have
+            a drink special, our user will want to know. If you get the latest
+            craft brew, we will tell people about it. A daily update of what is
+            going on in bar culture in the five boroughs will appear on our
+            site.
+          </p>
+        </section>
+
+        <section class="mb-8">
+          <h2 class="text-2xl font-bold mb-2">
+            What do we mean by drinking establishment?
+          </h2>
+          <p class="text-base mb-4">
+            Pubs, Taverns, Inns, Hotel bars, College bars, Sports bars, Irish
+            bars, Dive bars, Beer Halls, Brewpubs, Cocktail lounges, Wine bars,
+            Breweries, Tap rooms, Beer Gardens, Pool Bars, Beach Bars, Gastro
+            Pub, Public Houses, Brew Houses and many other categories are what
+            we consider drinking establishments.
+          </p>
+          <p class="text-base mb-4">
+            As a general rule we ask three questions to determine if an
+            establishment makes it on this site. Answer yes to the following
+            three criteria and it is good to go:
+          </p>
+          <ul class="list-disc list-inside space-y-2 pl-4">
+            <li>
+              Can you enter without having to wait in a line and / or needing a
+              reservation?
+            </li>
+            <li>Can you sit and have a drink?</li>
+            <li>Can you socialize with a stranger, if you chose to?</li>
+          </ul>
+        </section>
+
+        <section class="mb-8">
+          <h2 class="text-2xl font-bold mb-2">What is Bar Culture?</h2>
+          <p class="text-base mb-4">
+            Are you going to a bar to watch the latest sports team win, then
+            celebrate with other fans? Are you dropping by your local breweries
+            tap room to try their latest sour, comparing tasting notes, then
+            sitting back in judgment of it? Do you spend every other Thursday at
+            your local pub with a group of friends, searching your brain for
+            that elusive answer to a trivia question that will win your team the
+            prize? These are a few examples of bar culture. Simply put a
+            gathering with like minds and sharing a drink.
+          </p>
+        </section>
+
+        <section class="mb-8">
+          <h2 class="text-2xl font-bold mb-2">What NYCThirst is not.</h2>
+          <p class="text-base mb-4">
+            We are not a review site. We do not have an opinion about the place
+            you chose to drink at. We don’t have an opinion about what you
+            should be drinking. This is not the website to tell us you had a
+            good or bad time at a place you chose to visit. This website is
+            going to be a judgement free zone. If you are looking for a top ten
+            list of anything this is not the site for you. Anyone who is old
+            enough to drink is also old enough to decide for themselves what
+            they enjoy or not enjoy.
+          </p>
+        </section>
+
+        <section class="mb-8">
+          <h2 class="text-2xl font-bold mb-2">Addiction / Alcoholism</h2>
+          <p class="text-base mb-4">
+            Please Drink Responsibly, your physical and mental health is very
+            important and should be taken seriously. If you find yourself binge
+            drinking or you start displaying a pattern of drinking that results
+            in significant distress, you likely suffer from alcohol use disorder
+            otherwise known as Alcoholism. If you think you have a problem
+            please seek help. In NYC there is a 24 hour/seven days per week
+            information and referral number, call
+            <span class="font-bold">1-888-NYC-WELL (1-888-692-9355)</span>.
+          </p>
+          <p class="text-base mb-2">
+            For more information about Alcoholism please visit the
+            <a
+              href="https://www.mayoclinic.org/diseases-conditions/alcohol-use-disorder/symptoms-causes/syc-20369243"
+              class="text-blue-600 underline"
+              >Mayo Clinic website</a
+            >:
+          </p>
+          <p class="text-blue-600 mb-4">
+            https://www.mayoclinic.org/diseases-conditions/alcohol-use-disorder/symptoms-causes/syc-20369243
+          </p>
+          <p class="text-base mb-2">
+            Or visit the
+            <a
+              href="https://www1.nyc.gov/site/doh/health/health-topics/alcohol-and-drug-use-services.page"
+              class="text-blue-600 underline"
+              >New York City Alcohol and Drug Use</a
+            >
+            services page:
+          </p>
+          <p class="text-blue-600">
+            https://www1.nyc.gov/site/doh/health/health-topics/alcohol-and-drug-use-services.page
+          </p>
+        </section>
+      </div>
+    </div>
+
+    <!--  BOTTOM SECTION   -->
+    <div
+      class="container mx-auto p-5 flex flex-col lg:flex-row items-center lg:gap-10 mt-5 py-10"
+    >
+      <section class="w-1/2">
+        <img
+          class="lg:w-[90%] lg:h-52 w-52"
+          src="../assets/Logo.png"
+          alt="Nyc-Thists logo"
+        />
+      </section>
+
+      <section class="text-white w-1/2">
+        <h2 class="font-bold text-2xl">NYCThrist</h2>
+        <h4 class="font-semibold text-lg">A NEw York Bar Calture Guide</h4>
+        <p class="mt-4 text-lg">
+          NYCThirst is the bar calture guide for the five boroughs of New Yourk
+          City.We have a detailed page for every drinking establishment in New
+          York City.Our job is to give the user the best information we can
+          gather about a drinking establishment.
+        </p>
+        <p class="mt-4 text-lg">
+          We plan on being a hyper local business forward website.If you have
+          trivia night, we would like to tell our users about it.If you have a
+          drink special, our user will want to know if you get the latest craft
+          brew, we will tell people about it. A daily update of what is going on
+          in bar calture inthe five boroughs will appear on our site.
+        </p>
+      </section>
+    </div>
+
+    <!-- JAVASCRIPT -->
+    <script src="../js/utility.js"></script>
+
+    <!-- JAVASCRIPT CND LINKS FOR OWL CAROUSEL -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+    <!-- OWL carossel functionlites -->
+    <script>
+      $(document).ready(function () {
+        const owl = $(".owl-carousel").owlCarousel({
+          loop: true,
+          margin: 10,
+          responsiveClass: true,
+          nav: true,
+          autoplay: true,
+          autoplayTimeout: 3000,
+          autoplayHoverPause: true,
+          smartSpeed: 600,
+          navText: [
+            '<button class="owl-prev">&lt;</button>',
+            '<button class="owl-next">&gt;</button>',
+          ],
+          responsive: {
+            0: {
+              items: 1,
+              nav: true,
+            },
+            768: {
+              items: 1,
+              nav: true,
+            },
+            1024: {
+              items: 2,
+              nav: true,
+              loop: true,
+            },
+          },
+        });
+
+        $(".owl-carousel").hover(
+          function () {
+            owl.trigger("play.owl.autoplay", [1000]);
+          },
+          function () {
+            owl.trigger("stop.owl.autoplay");
+          }
+        );
+      });
+    </script>
+  </body>
+</html>
