@@ -1,0 +1,15 @@
+.owl-theme .owl-dots .owl-dot span {
+  width: 8px !important;
+  height: 8px !important;
+  border-radius: 5px !important;
+}
+
+.owl-theme .owl-dots .owl-dot.active span,
+.owl-theme .owl-dots .owl-dot:hover span {
+  background: #700000 !important;
+}
+
+.owl-nav {
+  display: flex;
+  justify-content: space-between;
+}

@@ -1,3 +1,12 @@
+/**
+ * Title: 'functionlities define by Masum Rana'
+ * Description: ''
+ * Author: 'Masum Rana'
+ * Email: 'masum.rana6267@gmail.com'
+ * Date: 21-05-2024
+ *
+ */
+
 // Mobile navbar
 let isVisableDropdown = false;
 
@@ -74,3 +83,46 @@ const toogleMobileNavbarDropdown3 = () => {
     dropdown_3_content_1.classList.remove("border-[#700000]");
   }
 };
+
+
+// Owl carousel functionlities
+$(document).ready(function () {
+  const owl = $(".owl-carousel").owlCarousel({
+    loop: true,
+    margin: 10,
+    responsiveClass: true,
+    nav: true,
+    autoplay: true,
+    autoplayTimeout: 3000,
+    autoplayHoverPause: true,
+    smartSpeed: 600,
+    navText: [
+      '<button class="owl-prev">&lt;</button>',
+      '<button class="owl-next">&gt;</button>',
+    ],
+    responsive: {
+      0: {
+        items: 1,
+        nav: true,
+      },
+      768: {
+        items: 1,
+        nav: true,
+      },
+      1024: {
+        items: 2,
+        nav: true,
+        loop: true,
+      },
+    },
+  });
+
+  $(".owl-carousel").hover(
+    function () {
+      owl.trigger("play.owl.autoplay", [1000]);
+    },
+    function () {
+      owl.trigger("stop.owl.autoplay");
+    }
+  );
+});
