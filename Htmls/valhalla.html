@@ -1,0 +1,1380 @@
+<!-- /**
+ * Title: 'This is NYC-Thist Home page. Ui develop By Masum Rana. '
+ * Description: ''
+ * Author: 'Masum Rana'
+ * Email: 'masum.rana6267@gmail.com'
+ * Date: 21-05-2024
+ *
+*/ -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Tailwind css cdn -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- custom css -->
+    <link rel="stylesheet" href="../CSS/style.css" />
+
+    <!-- google font Roboto Condensed & Lato   -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..800;1,400..800&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..800;1,400..800&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+
+    <!--Owl Carousel  -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"
+    />
+
+    <title>Valhalla NYC-Thists</title>
+  </head>
+  <body class="bg-[#e38509]">
+    <!-- HEADER SECTION  -->
+    <header>
+      <!-- navigation section  -->
+      <section class="bg-[#f9f9f9]">
+        <!-- destop Navbar -->
+        <nav
+          class="container mx-auto hidden lg:flex items-center gap-10 bg-white px-20 py-6"
+        >
+          <!-- logo section  -->
+          <section>
+            <img class="w-32" src="../assets/Logo.png" alt="Nyc-Thists logo" />
+          </section>
+          <!-- Nav part-->
+          <section>
+            <!-- nav upper part -->
+            <div class="flex items-center gap-10">
+              <a class="hover:text-[#e38509]" href="/">HOME</a>
+              <a class="hover:text-[#e38509]" href="/">EVENT</a>
+              <a class="hover:text-[#e38509]" href="/">NEIGHBORHOODS</a>
+              <a class="hover:text-[#e38509]" href="/">BAR TYPE</a>
+              <a class="hover:text-[#e38509]" href="/">NEWS</a>
+              <a class="hover:text-[#e38509]" href="/">JOB BORAD</a>
+              <a class="hover:text-[#e38509]" href="/">ABOUT</a>
+              <a class="hover:text-[#e38509]" href="/">CONTACT US</a>
+            </div>
+            <!-- nav lower part -->
+            <div class="flex gap-8 items-center mt-3">
+              <!-- dropdown  1 -->
+              <div class="] relative group">
+                <button
+                  class="flex items-center gap-1 group-hover:text-[#700000] transition-color duration-300"
+                >
+                  BROOKLYN
+                  <svg
+                    fill=""
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="30"
+                    height="30"
+                    fill="#000000"
+                    viewBox="0 0 256 256"
+                  >
+                    <path
+                      d="M213.66,101.66l-80,80a8,8,0,0,1-11.32,0l-80-80A8,8,0,0,1,53.66,90.34L128,164.69l74.34-74.35a8,8,0,0,1,11.32,11.32Z"
+                    ></path>
+                  </svg>
+                </button>
+                <!-- dropdown 1 items -->
+                <div
+                  class="absolute group-hover:border-t-2 hidden group-hover:block border-[#700000] w-[16rem] bg-white text-sm top-7"
+                >
+                  <div
+                    class="py-2 border-y px-3 transition-color duration-300 hover:text-[#700000]"
+                  >
+                    <a href=""> BROOKLYN EVENTS</a>
+                  </div>
+                  <div
+                    class="py-2 border-y px-3 transition-color duration-300 hover:text-[#700000]"
+                  >
+                    <a href=""> BROOKLYN NEIGHBORHOODS</a>
+                  </div>
+                  <div
+                    class="py-2 border-y px-3 transition-color duration-300 hover:text-[#700000]"
+                  >
+                    <a href=""> BROOKLYN BARS BY TYPE</a>
+                  </div>
+                </div>
+              </div>
+
+              <!-- dropdown 2 -->
+              <div class="] relative group">
+                <button
+                  class="flex items-center gap-1 group-hover:text-[#700000] transition-color duration-300"
+                >
+                  MANHATTAN
+                  <svg
+                    fill=""
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="30"
+                    height="30"
+                    fill="#000000"
+                    viewBox="0 0 256 256"
+                  >
+                    <path
+                      d="M213.66,101.66l-80,80a8,8,0,0,1-11.32,0l-80-80A8,8,0,0,1,53.66,90.34L128,164.69l74.34-74.35a8,8,0,0,1,11.32,11.32Z"
+                    ></path>
+                  </svg>
+                </button>
+                <!-- dropdown 1 items -->
+                <div
+                  class="absolute group-hover:border-t-2 hidden group-hover:block border-[#700000] w-[16rem] bg-white text-sm top-7"
+                >
+                  <div
+                    class="py-2 border-y px-3 transition-color duration-300 hover:text-[#700000]"
+                  >
+                    <a href=""> BROOKLYN EVENTS</a>
+                  </div>
+                  <div
+                    class="py-2 border-y px-3 transition-color duration-300 hover:text-[#700000]"
+                  >
+                    <a href=""> BROOKLYN NEIGHBORHOODS</a>
+                  </div>
+                  <div
+                    class="py-2 border-y px-3 transition-color duration-300 hover:text-[#700000]"
+                  >
+                    <a href=""> BROOKLYN BARS BY TYPE</a>
+                  </div>
+                </div>
+              </div>
+
+              <!-- dropdown 3 -->
+              <div class="] relative group">
+                <button
+                  class="flex items-center gap-1 group-hover:text-[#700000] transition-color duration-300"
+                >
+                  QUEENS
+                  <svg
+                    fill=""
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="30"
+                    height="30"
+                    fill="#000000"
+                    viewBox="0 0 256 256"
+                  >
+                    <path
+                      d="M213.66,101.66l-80,80a8,8,0,0,1-11.32,0l-80-80A8,8,0,0,1,53.66,90.34L128,164.69l74.34-74.35a8,8,0,0,1,11.32,11.32Z"
+                    ></path>
+                  </svg>
+                </button>
+                <!-- dropdown 1 items -->
+                <div
+                  class="absolute group-hover:border-t-2 hidden group-hover:block border-[#700000] w-[16rem] bg-white text-sm top-7"
+                >
+                  <div
+                    class="py-2 border-y px-3 transition-color duration-300 hover:text-[#700000]"
+                  >
+                    <a href=""> BROOKLYN EVENTS</a>
+                  </div>
+                  <div
+                    class="py-2 border-y px-3 transition-color duration-300 hover:text-[#700000]"
+                  >
+                    <a href=""> BROOKLYN NEIGHBORHOODS</a>
+                  </div>
+                  <div
+                    class="py-2 border-y px-3 transition-color duration-300 hover:text-[#700000]"
+                  >
+                    <a href=""> BROOKLYN BARS BY TYPE</a>
+                  </div>
+                </div>
+              </div>
+              <!-- dropdown 4 -->
+              <div class="] relative group">
+                <button
+                  class="flex items-center gap-1 group-hover:text-[#700000] transition-color duration-300"
+                >
+                  STATEN ISLAND
+                  <svg
+                    fill=""
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="30"
+                    height="30"
+                    fill="#000000"
+                    viewBox="0 0 256 256"
+                  >
+                    <path
+                      d="M213.66,101.66l-80,80a8,8,0,0,1-11.32,0l-80-80A8,8,0,0,1,53.66,90.34L128,164.69l74.34-74.35a8,8,0,0,1,11.32,11.32Z"
+                    ></path>
+                  </svg>
+                </button>
+                <!-- dropdown 1 items -->
+                <div
+                  class="absolute group-hover:border-t-2 hidden group-hover:block border-[#700000] w-[16rem] bg-white text-sm top-7"
+                >
+                  <div
+                    class="py-2 border-y px-3 transition-color duration-300 hover:text-[#700000]"
+                  >
+                    <a href=""> BROOKLYN EVENTS</a>
+                  </div>
+                  <div
+                    class="py-2 border-y px-3 transition-color duration-300 hover:text-[#700000]"
+                  >
+                    <a href=""> BROOKLYN NEIGHBORHOODS</a>
+                  </div>
+                  <div
+                    class="py-2 border-y px-3 transition-color duration-300 hover:text-[#700000]"
+                  >
+                    <a href=""> BROOKLYN BARS BY TYPE</a>
+                  </div>
+                </div>
+              </div>
+              <!-- dropdown 5 -->
+              <div class="] relative group">
+                <button
+                  class="flex items-center gap-1 group-hover:text-[#700000] transition-color duration-300"
+                >
+                  THE BRONX
+                  <svg
+                    fill=""
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="30"
+                    height="30"
+                    fill="#000000"
+                    viewBox="0 0 256 256"
+                  >
+                    <path
+                      d="M213.66,101.66l-80,80a8,8,0,0,1-11.32,0l-80-80A8,8,0,0,1,53.66,90.34L128,164.69l74.34-74.35a8,8,0,0,1,11.32,11.32Z"
+                    ></path>
+                  </svg>
+                </button>
+                <!-- dropdown 1 items -->
+                <div
+                  class="absolute group-hover:border-t-2 hidden group-hover:block border-[#700000] w-[16rem] bg-white text-sm top-7"
+                >
+                  <div
+                    class="py-2 border-y px-3 transition-color duration-300 hover:text-[#700000]"
+                  >
+                    <a href=""> BROOKLYN EVENTS</a>
+                  </div>
+                  <div
+                    class="py-2 border-y px-3 transition-color duration-300 hover:text-[#700000]"
+                  >
+                    <a href=""> BROOKLYN NEIGHBORHOODS</a>
+                  </div>
+                  <div
+                    class="py-2 border-y px-3 transition-color duration-300 hover:text-[#700000]"
+                  >
+                    <a href=""> BROOKLYN BARS BY TYPE</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+        </nav>
+
+        <!-- mobile or tablet navbar  -->
+        <nav
+          class="flex justify-between items-center bg-gray-100 md:hidden py-2"
+        >
+          <div class="flex-1 flex justify-center">
+            <img class="w-28" src="../assets/Logo.png" alt="Nyc-Thists logo" />
+          </div>
+          <div>
+            <button
+              onclick="toggleMobNavDropdown()"
+              class="absolute right-4 top-8 bg-[#700000] p-1"
+              id="menu-icon"
+            >
+              <svg
+                id="svg_toggle_icon"
+                xmlns="http://www.w3.org/2000/svg"
+                width="20"
+                height="20"
+                fill="white"
+                viewBox="0 0 256 256"
+              >
+                <path
+                  d="M224,128a8,8,0,0,1-8,8H40a8,8,0,0,1,0-16H216A8,8,0,0,1,224,128ZM40,72H216a8,8,0,0,0,0-16H40a8,8,0,0,0,0,16ZM216,184H40a8,8,0,0,0,0,16H216a8,8,0,0,0,0-16Z"
+                ></path>
+              </svg>
+            </button>
+          </div>
+        </nav>
+
+        <!-- Mobile navbar content -->
+        <div
+          id="navbar_dropdown"
+          class="hidden h-auto w-full border right-0 left-0 absolute lg:hidden text-xs pb-5 bg-gray-100"
+        >
+          <div class="flex flex-col">
+            <!-- <a class="hover:text-[#e38509] bg-gray-200 px-5 border-y-2 border-gray-500 py-2" href="/">HOME</a> -->
+            <a
+              class="hover:text-[#e38509] bg-gray-100 px-5 border-y-2 border-gray-300 py-1 text-gray-700 font-semibold"
+              href="/"
+              >EVENT</a
+            >
+            <a
+              class="hover:text-[#e38509] bg-gray-100 px-5 border-b-2 border-gray-300 py-1 text-gray-700 font-semibold"
+              href="/"
+              >NEIGHBORHOODS</a
+            >
+            <a
+              class="hover:text-[#e38509] bg-gray-100 px-5 border-b-2 border-gray-300 py-1 text-gray-700 font-semibold"
+              href="/"
+              >BAR TYPE</a
+            >
+            <a
+              class="hover:text-[#e38509] bg-gray-100 px-5 border-b-2 border-gray-300 py-1 text-gray-700 font-semibold"
+              href="/"
+              >NEWS</a
+            >
+            <a
+              class="hover:text-[#e38509] bg-gray-100 px-5 border-b-2 border-gray-300 py-1 text-gray-700 font-semibold"
+              href="/"
+              >JOB BORAD</a
+            >
+            <a
+              c
+              class="hover:text-[#e38509] bg-gray-100 px-5 border-b-2 border-gray-300 py-1 text-gray-700 font-semibold"
+              href="/"
+              >ABOUT</a
+            >
+            <a
+              class="hover:text-[#e38509] bg-gray-100 px-5 border-b-2 border-gray-300 py-1 text-gray-700 font-semibold"
+              href="/"
+              >CONTACT US</a
+            >
+          </div>
+
+          <div class="flex flex-col">
+            <!-- dropdown  1 -->
+            <div class="] relative group bg-gray-100">
+              <button
+                id="dropdown_1_btn"
+                onclick="toogleMobileNavbarDropdown1()"
+                class="px-5 border-gray-300 py-1 text-gray-700 font-semibold flex items-center gap-1"
+              >
+                BROOKLYN
+                <svg
+                  fill=""
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="30"
+                  height="30"
+                  fill="#000000"
+                  viewBox="0 0 256 256"
+                >
+                  <path
+                    d="M213.66,101.66l-80,80a8,8,0,0,1-11.32,0l-80-80A8,8,0,0,1,53.66,90.34L128,164.69l74.34-74.35a8,8,0,0,1,11.32,11.32Z"
+                  ></path>
+                </svg>
+              </button>
+              <!-- dropdown 1  content -->
+              <div
+                id="dropdown_1_content_1"
+                class="border-t-2 transition-color duration-300 w-full bg-gray-100 text-sm bg-gray-100 hidden text-xs"
+              >
+                <!-- dropdown  Content 1 -->
+                <div
+                  class="py-2 border-t-2 pl-12 transition-color duration-300 hover:text-[#700000] px-5 border-gray-300 py-1 text-gray-700 font-semibold bg-gray-100"
+                >
+                  <a href=""> BROOKLYN EVENTS</a>
+                </div>
+                <!-- dropdown  Content 2 -->
+                <div
+                  class="py-2 border-t-2 pl-12 transition-color duration-300 hover:text-[#700000] px-5 border-gray-300 py-1 text-gray-700 font-semibold bg-gray-100 text-xs"
+                >
+                  <a href=""> BROOKLYN NEIGHBORHOODS</a>
+                </div>
+
+                <!-- dropdown content 3 -->
+                <div
+                  class="py-2 border-y-2 pl-12 transition-color duration-300 hover:text-[#700000] px-5 border-gray-300 py-1 text-gray-700 font-semibold bg0gray-100 text-xs"
+                >
+                  <a href=""> BROOKLYN BARS BY TYPE</a>
+                </div>
+              </div>
+            </div>
+
+            <!-- dropdown  2 -->
+            <div
+              class="] relative group bg-gray-100 border-t-2 border-gray-300"
+            >
+              <button
+                id="dropdown_2_btn"
+                onclick="toogleMobileNavbarDropdown2()"
+                class="px-5 border-gray-300 py-1 text-gray-700 font-semibold flex items-center gap-1"
+              >
+                MANHATTAN
+                <svg
+                  fill=""
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="30"
+                  height="30"
+                  fill="#000000"
+                  viewBox="0 0 256 256"
+                >
+                  <path
+                    d="M213.66,101.66l-80,80a8,8,0,0,1-11.32,0l-80-80A8,8,0,0,1,53.66,90.34L128,164.69l74.34-74.35a8,8,0,0,1,11.32,11.32Z"
+                  ></path>
+                </svg>
+              </button>
+
+              <!-- dropdown 1  content -->
+              <div
+                id="dropdown_2_content_1"
+                class="border-t-2 transition-color duration-300 w-full bg-gray-100 text-sm bg-gray-100 hidden"
+              >
+                <!-- dropdown  Content 1 -->
+                <div
+                  class="py-2 border-t-2 pl-12 transition-color duration-300 hover:text-[#700000] px-5 border-gray-300 py-1 text-gray-700 font-semibold bg-gray-100 text-xs"
+                >
+                  <a href=""> BROOKLYN EVENTS</a>
+                </div>
+                <!-- dropdown  Content 2 -->
+                <div
+                  class="py-2 border-t-2 pl-12 transition-color duration-300 hover:text-[#700000] px-5 border-gray-300 py-1 text-gray-700 font-semibold bg-gray-100 text-xs"
+                >
+                  <a href=""> BROOKLYN NEIGHBORHOODS</a>
+                </div>
+
+                <!-- dropdown content 3 -->
+                <div
+                  class="py-2 border-y-2 pl-12 transition-color duration-300 hover:text-[#700000] px-5 border-gray-300 py-1 text-gray-700 font-semibold bg0gray-100 text-xs"
+                >
+                  <a href=""> BROOKLYN BARS BY TYPE</a>
+                </div>
+              </div>
+            </div>
+
+            <!-- dropdown  3 -->
+            <div class="relative group bg-gray-100 border-t-2 border-gray-300">
+              <button
+                id="dropdown_3_btn"
+                onclick="toogleMobileNavbarDropdown3()"
+                class="px-5 border-gray-300 py-1 text-gray-700 font-semibold flex items-center gap-1"
+              >
+                THE BRONX
+                <svg
+                  fill=""
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="30"
+                  height="30"
+                  fill="#000000"
+                  viewBox="0 0 256 256"
+                >
+                  <path
+                    d="M213.66,101.66l-80,80a8,8,0,0,1-11.32,0l-80-80A8,8,0,0,1,53.66,90.34L128,164.69l74.34-74.35a8,8,0,0,1,11.32,11.32Z"
+                  ></path>
+                </svg>
+              </button>
+              <!-- dropdown 1  content -->
+              <div
+                id="dropdown_3_content_1"
+                class="border-t-2 transition-color duration-300 w-full bg-gray-100 text-sm bg-gray-100 hidden"
+              >
+                <!-- dropdown  Content 1 -->
+                <div
+                  class="py-2 border-t-2 pl-12 transition-color duration-300 hover:text-[#700000] px-5 border-gray-300 py-1 text-gray-700 font-semibold bg-gray-100 text-xs"
+                >
+                  <a href=""> BROOKLYN EVENTS</a>
+                </div>
+                <!-- dropdown  Content 2 -->
+                <div
+                  class="py-2 border-t-2 pl-12 transition-color duration-300 hover:text-[#700000] px-5 border-gray-300 py-1 text-gray-700 font-semibold bg-gray-100 text-xs"
+                >
+                  <a href=""> BROOKLYN NEIGHBORHOODS</a>
+                </div>
+
+                <!-- dropdown content 3 -->
+                <div
+                  class="py-2 border-y-2 pl-12 transition-color duration-300 hover:text-[#700000] px-5 border-gray-300 py-1 text-gray-700 font-semibold bg0gray-100 text-xs"
+                >
+                  <a href=""> BROOKLYN BARS BY TYPE</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="flex items-center justify-center lg:py-5 py-2">
+        <img
+          class="lg:w-96 lg:h-52 w-52 h-auto"
+          src="../assets/Logo.png"
+          alt="Nyc-Thists logo"
+        />
+      </section>
+    </header>
+
+    <!-- EVENT PAGE CONTENT SECTION -->
+    <div class="container mx-auto bg-[#f4f4f4] lg:p-5">
+      <!--  ADVERTISMENT SECTION  -->
+      <section
+        class="w-[300px] h-[250px] md:w-[728px] lg:w-[970px] md:h-[90px] border border-black mx-auto flex justify-center items-center"
+      >
+        <h3 class="">ADS</h3>
+      </section>
+
+      <section class="lg:mx-[2rem]">
+        <!--  HEADING BANNER SECTION   -->
+        <div class="mx-auto relative">
+          <div
+            class="absolute inset-0 flex flex-col items-center justify-center bg-black bg-opacity-50"
+          >
+            <h2
+              class="relative font-bold lg:text-7xl text-2xl text-center text-white p-4"
+            >
+              VALHALLA
+            </h2>
+            <div
+              class="text-white font-bold text-[10px] lg:text-lg flex items-center gap-2 lg:gap-8 lg:mt-3"
+            >
+              <h3>BOROUGH</h3>
+              <span>|</span>
+              <h3>NEIGHBORHOOD</h3>
+              <span>|</span>
+              <h3>BAR TYPE</h3>
+            </div>
+          </div>
+
+          <img
+            class="w-full lg:h-[40rem] h-[20rem] my-10"
+            src="../assets/banner-2.jpg"
+            alt=""
+          />
+        </div>
+
+        <!--PAGE TITLE  -->
+        <div class="p-5">
+          <h3 class="font-bold text-3xl mt-5">VALHALLA</h3>
+          <section class="grid grid-cols-12 lg:gap-10 mt-5">
+            <!-- LEFT PORTION   -->
+            <div class="col-span-12 lg:col-span-9">
+              <!-- FEATURED EVENT -->
+              <section class="my-5">
+                <h3
+                  class="border-b-2 border-gray-300 font-bold lg:text-2xl text-gray-800 pb-3 tracking-wide"
+                >
+                  <span class="border-b-4 border-[#700000] px-5 pb-3"
+                    >A LITTLE</span
+                  >
+                  ABOUT VALHALLA
+                </h3>
+
+                <div>
+                  <p class="mt-5 tracking-tighter font-semibold">
+                    This Viking themed bar has 48 tabs of craft bear and cider.
+                    They play heavy on the Viking themed with their decor,
+                    selection of Mead and imported iceland Einstok beers on
+                    tap.They have two happy hours4 -6pm and angry hour 12am -
+                    close.
+                  </p>
+
+                  <p class="mt-10 tracking-tighter font-semibold">
+                    With a full bar and Viking themed drink specials like the
+                    "Nordic mule" and the "Valhalla" and the "Valhalla to Hell"
+                    you are sure to have fantastic time. I would get three early
+                    and take advantage of the happy hour and to get a seat.
+                    Valhalla is not a large bar, it could get crowded and lound
+                    very fast.
+                  </p>
+                </div>
+                
+                <div class="my-10 flex flex-wrap lg:gap-12 gap-5">
+                  <p class="lg:w-[45%] w-full text-lg">
+                    The viking theme decor really gives the bar its character.
+                    When you enter the bar if you look up to you left you will
+                    see a breaded viking greeting you.I am not sure if he is
+                    angry or drunk.He does look amazing.
+                  </p>
+
+                  <img
+                    src="../assets/banner-2.jpg "
+                    class="lg:w-[48%] w-full h-[16rem]"
+                    alt=""
+                  />
+                </div>
+                <div class="my-10 flex flex-wrap lg:gap-10 gap-5">
+                  <img
+                    src="../assets/banner-3.jpg "
+                    class="lg:w-[48%] w-full h-[16rem]"
+                    alt=""
+                  />
+                  <div class="lg:w-[40%] w-full">
+                    <p class="text-lg">
+                      The viking theme decor really gives the bar its character.
+                      When you enter the bar if you look up to you left you will
+                      see a breaded viking greeting you.I am not sure if he is
+                      angry or drunk.He does look amazing.
+                    </p>
+
+                    <p class="text-lg mt-10">
+                      Come by enjoy the atmosphere, drink the local craft beer
+                      or have a special coctail and tip your bartender.
+                    </p>
+                  </div>
+                </div>
+
+                <div class="flex flex-wrap items-center gap-5">
+                  <img
+                    class="md:w-[48%] h-[20rem]"
+                    src="/assets/banner-3.jpg"
+                    alt=""
+                  />
+                  <img
+                    class="md:w-[48%] h-[20rem]"
+                    src="/assets/banner-4.jpg"
+                    alt=""
+                  />
+                </div>
+              </section>
+
+              <!--VALLHALLA  EVENT BY BOROUGH-->
+              <section class="mb-5">
+                <h3
+                  class="font-bold text-xs lg:text-2xl text-gray-800 pb-3 flex items-center gap-2"
+                >
+                  <span class="border-b-4 border-[#700000] pb-3 tracking-wide"
+                    >VALLHALLA
+                  </span>
+                  <span class="flex items-center gap-1 pb-3">
+                    NEIGHBORHOOD
+                  </span>
+                </h3>
+                <div
+                  class="flex items-center flex-col lg:flex-row lg:gap-20 gap-5"
+                >
+                  <!--  EVENT SECTION   -->
+
+                  <!-- FEATURED EVENT 1 -->
+                  <div>
+                    <!-- EVENT PORTION 1 -->
+                    <div class="flex w-full gap-3 items-center my-3">
+                      <!-- event svg icon  -->
+                      <svg
+                        width="50"
+                        fill="#000000"
+                        version="1.1"
+                        id="Capa_1"
+                        xmlns="http://www.w3.org/2000/svg"
+                        xmlns:xlink="http://www.w3.org/1999/xlink"
+                        viewBox="0 0 468.59 468.59"
+                        xml:space="preserve"
+                        stroke="#000000"
+                      >
+                        <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                        <g
+                          id="SVGRepo_tracerCarrier"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        ></g>
+                        <g id="SVGRepo_iconCarrier">
+                          <g>
+                            <path
+                              d="M84.92,457.062c0.508,6.508,5.936,11.528,12.462,11.528h273.827c6.527,0,11.955-5.021,12.462-11.528l34.587-443.59 c0.271-3.474-0.92-6.902-3.287-9.46C412.604,1.454,409.279,0,405.795,0h-343c-3.484,0-6.81,1.454-9.176,4.012 c-2.366,2.558-3.557,5.986-3.287,9.46L84.92,457.062z M359.646,443.59h-250.7L90.857,211.603 c7.596,3.911,18.202,8.226,31.587,10.927c25.779,5.201,67.821,5.401,121.709-23.192c37.103-19.686,71.658-25.223,102.71-16.451 c15.63,4.414,26.468,11.56,31.88,15.757L359.646,443.59z M392.283,25l-11.321,145.199c-6.857-3.894-15.451-7.867-25.692-10.906 c-26.033-7.726-68.479-10.881-122.833,17.96c-36.856,19.556-72.782,27.475-103.534,21.064 c-23.044-4.804-38.933-16.251-40.412-17.077L76.309,25H392.283z"
+                            ></path>
+                          </g>
+                        </g>
+                      </svg>
+
+                      <!-- event text  -->
+                      <div>
+                        <h3 class="underline font-extrabold text-md lg:text-xl">
+                          APRIL 30,2024
+                        </h3>
+                        <h3 class="font-extrabold text-md lg:text-xl">
+                          KCBC Top Takeover 16 Taps Of
+                        </h3>
+                        <h3 class="font-extrabold text-md lg:text-xl">
+                          From A Local Brewery.
+                          <a
+                            href=""
+                            class="text-[#e38509] underline font-semibold"
+                            >Learn More</a
+                          >
+                        </h3>
+                      </div>
+                    </div>
+
+                    <!-- EVENT PORTION 2 -->
+                    <div class="flex w-full gap-3 items-center mb-3">
+                      <!-- EVENT SVG ICON  -->
+                      <svg
+                        width="50"
+                        fill="#000000"
+                        version="1.1"
+                        id="Capa_1"
+                        xmlns="http://www.w3.org/2000/svg"
+                        xmlns:xlink="http://www.w3.org/1999/xlink"
+                        viewBox="0 0 441.838 441.838"
+                        xml:space="preserve"
+                      >
+                        <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                        <g
+                          id="SVGRepo_tracerCarrier"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        ></g>
+                        <g id="SVGRepo_iconCarrier">
+                          <g>
+                            <path
+                              d="M404.771,32.74c2.346-2.344,3.662-5.523,3.662-8.839V12.5c0-6.903-5.596-12.5-12.5-12.5H45.905 c-6.903,0-12.5,5.597-12.5,12.5v11.401c0,3.315,1.317,6.495,3.661,8.839l150.606,150.606V373.53h-44.24 c-4.689,0-8.984,2.624-11.123,6.797l-22.204,43.308c-1.987,3.875-1.813,8.505,0.457,12.222c2.27,3.716,6.312,5.981,10.666,5.981 H320.61c4.354,0,8.395-2.267,10.666-5.981c2.27-3.716,2.443-8.347,0.457-12.222l-22.203-43.308 c-2.141-4.173-6.436-6.797-11.123-6.797h-44.242V183.347L404.771,32.74z M241.665,398.53h49.104l9.387,18.308h-158.47l9.387-18.308 h49.102c6.903,0,12.5-5.598,12.5-12.5V178.169c0-3.315-1.317-6.495-3.661-8.839L64.683,25h312.475l-144.33,144.33 c-2.344,2.344-3.66,5.523-3.66,8.839V386.03C229.165,392.934,234.763,398.53,241.665,398.53z"
+                            ></path>
+                          </g>
+                        </g>
+                      </svg>
+
+                      <div>
+                        <h3 class="underline font-extrabold text-md lg:text-xl">
+                          MAY 2,2024
+                        </h3>
+                        <h3 class="font-extrabold text-md lg:text-xl">
+                          Mixology Competiion Judge
+                        </h3>
+                        <h3 class="font-extrabold text-md lg:text-xl">
+                          & Drink Cocktails.
+                          <a
+                            href=""
+                            class="text-[#e38509] underline font-semibold"
+                            >Learn More</a
+                          >
+                        </h3>
+                      </div>
+                    </div>
+                    <!-- EVENT PORTION 3 -->
+                    <div class="flex w-full gap-3 items-center mb-3">
+                      <!-- EVENT SVG ICON  -->
+                      <svg
+                        width="50"
+                        fill="#000000"
+                        version="1.1"
+                        id="Capa_1"
+                        xmlns="http://www.w3.org/2000/svg"
+                        xmlns:xlink="http://www.w3.org/1999/xlink"
+                        viewBox="0 0 39.69 39.689"
+                        xml:space="preserve"
+                      >
+                        <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                        <g
+                          id="SVGRepo_tracerCarrier"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        ></g>
+                        <g id="SVGRepo_iconCarrier">
+                          <g>
+                            <g>
+                              <path
+                                d="M25.964,39.689H13.725c-0.404,0-0.736-0.318-0.753-0.723c-0.006-0.135-0.131-3.35,0.687-7.06 c0.74-3.358-0.112-5.374-0.121-5.394c-0.017-0.039-0.032-0.084-0.043-0.125c-0.142-0.58-3.507-14.279-3.67-19.583 c-0.143-4.652,0.46-6.191,0.529-6.351C10.474,0.179,10.746,0,11.046,0h17.597c0.301,0,0.572,0.179,0.692,0.454 c0.068,0.16,0.672,1.7,0.528,6.351c-0.163,5.305-3.527,19.003-3.671,19.583c-0.011,0.045-0.026,0.088-0.044,0.129 c-0.007,0.017-0.859,2.032-0.119,5.39c0.817,3.71,0.693,6.925,0.688,7.061C26.7,39.371,26.367,39.689,25.964,39.689z M14.472,38.182h10.745c-0.011-1.129-0.107-3.442-0.659-5.951c-0.783-3.551,0.011-5.821,0.185-6.258 c0.237-0.969,3.461-14.232,3.614-19.214c0.091-2.954-0.135-4.544-0.287-5.252H11.618C11.467,2.21,11.241,3.8,11.332,6.759 c0.153,4.981,3.377,18.244,3.614,19.214c0.174,0.437,0.968,2.707,0.185,6.258C14.579,34.739,14.482,37.053,14.472,38.182z"
+                              ></path>
+                            </g>
+                            <g>
+                              <path
+                                d="M23.543,25.594c0.32-1.318,2.901-12.012,3.458-17.472h-1.805c0,0-0.754,5.024-1.591,7.703c0.167-5.024,0-7.703,0-7.703 H12.688c0.556,5.462,3.138,16.155,3.459,17.472c0.282,0.745,1.025,3.215,0.211,6.907c-0.179,0.813-0.307,1.601-0.4,2.331h7.772 c-0.093-0.732-0.22-1.521-0.399-2.331C22.518,28.809,23.261,26.339,23.543,25.594z"
+                              ></path>
+                            </g>
+                          </g>
+                        </g>
+                      </svg>
+                      <!-- EVENT TEXT -->
+                      <div>
+                        <h3 class="underline font-extrabold text-md lg:text-xl">
+                          MAY 8, 2024
+                        </h3>
+                        <h3 class="font-extrabold text-md lg:text-xl">
+                          Wine Testing Drink The Best Wines
+                        </h3>
+                        <h3 class="font-extrabold text-md lg:text-xl">
+                          Available In The Bronx
+                          <a
+                            href=""
+                            class="text-[#e38509] underline font-semibold"
+                            >Learn More</a
+                          >
+                        </h3>
+                      </div>
+                    </div>
+                    <!-- EVENT PORTION 4 -->
+                    <div class="flex w-full gap-3 items-center mb-2">
+                      <!-- EVENT SVG ICON  -->
+                      <svg
+                        width="50"
+                        fill="#000000"
+                        version="1.1"
+                        id="Capa_1"
+                        xmlns="http://www.w3.org/2000/svg"
+                        xmlns:xlink="http://www.w3.org/1999/xlink"
+                        viewBox="0 0 21.074 21.073"
+                        xml:space="preserve"
+                      >
+                        <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                        <g
+                          id="SVGRepo_tracerCarrier"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        ></g>
+                        <g id="SVGRepo_iconCarrier">
+                          <g>
+                            <path
+                              d="M19.705,0.81l-1.621,19.452H2.988L1.368,0.81H19.705 M19.705,0H1.368C1.141,0,0.925,0.095,0.771,0.262 c-0.153,0.167-0.23,0.39-0.211,0.616L2.181,20.33c0.035,0.42,0.386,0.743,0.808,0.743h15.094c0.423,0,0.773-0.323,0.809-0.743 l1.621-19.452c0.019-0.226-0.059-0.449-0.211-0.616C20.148,0.095,19.932,0,19.705,0L19.705,0z"
+                            ></path>
+                            <g>
+                              <path
+                                d="M2.669,6.674l0.735,8.827h14.262l0.735-8.827H2.669z M9.736,9.736l-0.828,2.276c-0.135,0.372-0.547,0.564-0.92,0.43 l-2.276-0.828c-0.372-0.135-0.564-0.547-0.429-0.92l0.828-2.276c0.136-0.372,0.547-0.564,0.92-0.429l2.276,0.829 C9.68,8.952,9.872,9.364,9.736,9.736z M15.823,12.898l-2.271,0.841c-0.372,0.138-0.784-0.052-0.922-0.425l-0.841-2.271 c-0.137-0.372,0.053-0.784,0.425-0.922l2.271-0.84c0.372-0.137,0.784,0.052,0.922,0.424l0.84,2.271 C16.385,12.35,16.195,12.762,15.823,12.898z"
+                              ></path>
+                            </g>
+                          </g>
+                        </g>
+                      </svg>
+                      <div>
+                        <h3 class="underline font-extrabold text-md lg:text-xl">
+                          MAY 13,2024
+                        </h3>
+                        <h3 class="font-extrabold text-md lg:text-xl">
+                          Whiskey Tasting & Distillery Tour.
+                        </h3>
+                        <h3 class="font-extrabold text-md lg:text-xl">
+                          <a
+                            href=""
+                            class="text-[#e38509] underline font-semibold"
+                            >Learn More</a
+                          >
+                        </h3>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- FEATURED EVENT 2 -->
+                  <div>
+                    <!-- EVENT PORTION 1 -->
+                    <div class="flex w-full gap-3 items-center my-3">
+                      <!-- event svg icon  -->
+                      <svg
+                        width="50"
+                        fill="#000000"
+                        version="1.1"
+                        id="Capa_1"
+                        xmlns="http://www.w3.org/2000/svg"
+                        xmlns:xlink="http://www.w3.org/1999/xlink"
+                        viewBox="0 0 468.59 468.59"
+                        xml:space="preserve"
+                        stroke="#000000"
+                      >
+                        <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                        <g
+                          id="SVGRepo_tracerCarrier"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        ></g>
+                        <g id="SVGRepo_iconCarrier">
+                          <g>
+                            <path
+                              d="M84.92,457.062c0.508,6.508,5.936,11.528,12.462,11.528h273.827c6.527,0,11.955-5.021,12.462-11.528l34.587-443.59 c0.271-3.474-0.92-6.902-3.287-9.46C412.604,1.454,409.279,0,405.795,0h-343c-3.484,0-6.81,1.454-9.176,4.012 c-2.366,2.558-3.557,5.986-3.287,9.46L84.92,457.062z M359.646,443.59h-250.7L90.857,211.603 c7.596,3.911,18.202,8.226,31.587,10.927c25.779,5.201,67.821,5.401,121.709-23.192c37.103-19.686,71.658-25.223,102.71-16.451 c15.63,4.414,26.468,11.56,31.88,15.757L359.646,443.59z M392.283,25l-11.321,145.199c-6.857-3.894-15.451-7.867-25.692-10.906 c-26.033-7.726-68.479-10.881-122.833,17.96c-36.856,19.556-72.782,27.475-103.534,21.064 c-23.044-4.804-38.933-16.251-40.412-17.077L76.309,25H392.283z"
+                            ></path>
+                          </g>
+                        </g>
+                      </svg>
+
+                      <!-- event text  -->
+                      <div>
+                        <h3 class="underline font-extrabold text-md lg:text-xl">
+                          APRIL 30,2024
+                        </h3>
+                        <h3 class="font-extrabold text-md lg:text-xl">
+                          KCBC Top Takeover 16 Taps Of
+                        </h3>
+                        <h3 class="font-extrabold text-md lg:text-xl">
+                          From A Local Brewery.
+                          <a
+                            href=""
+                            class="text-[#e38509] underline font-semibold"
+                            >Learn More</a
+                          >
+                        </h3>
+                      </div>
+                    </div>
+
+                    <!-- EVENT PORTION 2 -->
+                    <div class="flex w-full gap-3 items-center mb-3">
+                      <!-- EVENT SVG ICON  -->
+                      <svg
+                        width="50"
+                        fill="#000000"
+                        version="1.1"
+                        id="Capa_1"
+                        xmlns="http://www.w3.org/2000/svg"
+                        xmlns:xlink="http://www.w3.org/1999/xlink"
+                        viewBox="0 0 441.838 441.838"
+                        xml:space="preserve"
+                      >
+                        <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                        <g
+                          id="SVGRepo_tracerCarrier"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        ></g>
+                        <g id="SVGRepo_iconCarrier">
+                          <g>
+                            <path
+                              d="M404.771,32.74c2.346-2.344,3.662-5.523,3.662-8.839V12.5c0-6.903-5.596-12.5-12.5-12.5H45.905 c-6.903,0-12.5,5.597-12.5,12.5v11.401c0,3.315,1.317,6.495,3.661,8.839l150.606,150.606V373.53h-44.24 c-4.689,0-8.984,2.624-11.123,6.797l-22.204,43.308c-1.987,3.875-1.813,8.505,0.457,12.222c2.27,3.716,6.312,5.981,10.666,5.981 H320.61c4.354,0,8.395-2.267,10.666-5.981c2.27-3.716,2.443-8.347,0.457-12.222l-22.203-43.308 c-2.141-4.173-6.436-6.797-11.123-6.797h-44.242V183.347L404.771,32.74z M241.665,398.53h49.104l9.387,18.308h-158.47l9.387-18.308 h49.102c6.903,0,12.5-5.598,12.5-12.5V178.169c0-3.315-1.317-6.495-3.661-8.839L64.683,25h312.475l-144.33,144.33 c-2.344,2.344-3.66,5.523-3.66,8.839V386.03C229.165,392.934,234.763,398.53,241.665,398.53z"
+                            ></path>
+                          </g>
+                        </g>
+                      </svg>
+
+                      <div>
+                        <h3 class="underline font-extrabold text-md lg:text-xl">
+                          MAY 2,2024
+                        </h3>
+                        <h3 class="font-extrabold text-md lg:text-xl">
+                          Mixology Competiion Judge
+                        </h3>
+                        <h3 class="font-extrabold text-md lg:text-xl">
+                          & Drink Cocktails.
+                          <a
+                            href=""
+                            class="text-[#e38509] underline font-semibold"
+                            >Learn More</a
+                          >
+                        </h3>
+                      </div>
+                    </div>
+                    <!-- EVENT PORTION 3 -->
+                    <div class="flex w-full gap-3 items-center mb-3">
+                      <!-- EVENT SVG ICON  -->
+                      <svg
+                        width="50"
+                        fill="#000000"
+                        version="1.1"
+                        id="Capa_1"
+                        xmlns="http://www.w3.org/2000/svg"
+                        xmlns:xlink="http://www.w3.org/1999/xlink"
+                        viewBox="0 0 39.69 39.689"
+                        xml:space="preserve"
+                      >
+                        <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                        <g
+                          id="SVGRepo_tracerCarrier"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        ></g>
+                        <g id="SVGRepo_iconCarrier">
+                          <g>
+                            <g>
+                              <path
+                                d="M25.964,39.689H13.725c-0.404,0-0.736-0.318-0.753-0.723c-0.006-0.135-0.131-3.35,0.687-7.06 c0.74-3.358-0.112-5.374-0.121-5.394c-0.017-0.039-0.032-0.084-0.043-0.125c-0.142-0.58-3.507-14.279-3.67-19.583 c-0.143-4.652,0.46-6.191,0.529-6.351C10.474,0.179,10.746,0,11.046,0h17.597c0.301,0,0.572,0.179,0.692,0.454 c0.068,0.16,0.672,1.7,0.528,6.351c-0.163,5.305-3.527,19.003-3.671,19.583c-0.011,0.045-0.026,0.088-0.044,0.129 c-0.007,0.017-0.859,2.032-0.119,5.39c0.817,3.71,0.693,6.925,0.688,7.061C26.7,39.371,26.367,39.689,25.964,39.689z M14.472,38.182h10.745c-0.011-1.129-0.107-3.442-0.659-5.951c-0.783-3.551,0.011-5.821,0.185-6.258 c0.237-0.969,3.461-14.232,3.614-19.214c0.091-2.954-0.135-4.544-0.287-5.252H11.618C11.467,2.21,11.241,3.8,11.332,6.759 c0.153,4.981,3.377,18.244,3.614,19.214c0.174,0.437,0.968,2.707,0.185,6.258C14.579,34.739,14.482,37.053,14.472,38.182z"
+                              ></path>
+                            </g>
+                            <g>
+                              <path
+                                d="M23.543,25.594c0.32-1.318,2.901-12.012,3.458-17.472h-1.805c0,0-0.754,5.024-1.591,7.703c0.167-5.024,0-7.703,0-7.703 H12.688c0.556,5.462,3.138,16.155,3.459,17.472c0.282,0.745,1.025,3.215,0.211,6.907c-0.179,0.813-0.307,1.601-0.4,2.331h7.772 c-0.093-0.732-0.22-1.521-0.399-2.331C22.518,28.809,23.261,26.339,23.543,25.594z"
+                              ></path>
+                            </g>
+                          </g>
+                        </g>
+                      </svg>
+                      <!-- EVENT TEXT -->
+                      <div>
+                        <h3 class="underline font-extrabold text-md lg:text-xl">
+                          MAY 8, 2024
+                        </h3>
+                        <h3 class="font-extrabold text-md lg:text-xl">
+                          Wine Testing Drink The Best Wines
+                        </h3>
+                        <h3 class="font-extrabold text-md lg:text-xl">
+                          Available In The Bronx
+                          <a
+                            href=""
+                            class="text-[#e38509] underline font-semibold"
+                            >Learn More</a
+                          >
+                        </h3>
+                      </div>
+                    </div>
+                    <!-- EVENT PORTION 4 -->
+                    <div class="flex w-full gap-3 items-center mb-2">
+                      <!-- EVENT SVG ICON  -->
+                      <svg
+                        width="50"
+                        fill="#000000"
+                        version="1.1"
+                        id="Capa_1"
+                        xmlns="http://www.w3.org/2000/svg"
+                        xmlns:xlink="http://www.w3.org/1999/xlink"
+                        viewBox="0 0 21.074 21.073"
+                        xml:space="preserve"
+                      >
+                        <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                        <g
+                          id="SVGRepo_tracerCarrier"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        ></g>
+                        <g id="SVGRepo_iconCarrier">
+                          <g>
+                            <path
+                              d="M19.705,0.81l-1.621,19.452H2.988L1.368,0.81H19.705 M19.705,0H1.368C1.141,0,0.925,0.095,0.771,0.262 c-0.153,0.167-0.23,0.39-0.211,0.616L2.181,20.33c0.035,0.42,0.386,0.743,0.808,0.743h15.094c0.423,0,0.773-0.323,0.809-0.743 l1.621-19.452c0.019-0.226-0.059-0.449-0.211-0.616C20.148,0.095,19.932,0,19.705,0L19.705,0z"
+                            ></path>
+                            <g>
+                              <path
+                                d="M2.669,6.674l0.735,8.827h14.262l0.735-8.827H2.669z M9.736,9.736l-0.828,2.276c-0.135,0.372-0.547,0.564-0.92,0.43 l-2.276-0.828c-0.372-0.135-0.564-0.547-0.429-0.92l0.828-2.276c0.136-0.372,0.547-0.564,0.92-0.429l2.276,0.829 C9.68,8.952,9.872,9.364,9.736,9.736z M15.823,12.898l-2.271,0.841c-0.372,0.138-0.784-0.052-0.922-0.425l-0.841-2.271 c-0.137-0.372,0.053-0.784,0.425-0.922l2.271-0.84c0.372-0.137,0.784,0.052,0.922,0.424l0.84,2.271 C16.385,12.35,16.195,12.762,15.823,12.898z"
+                              ></path>
+                            </g>
+                          </g>
+                        </g>
+                      </svg>
+                      <div>
+                        <h3 class="underline font-extrabold text-md lg:text-xl">
+                          MAY 13,2024
+                        </h3>
+                        <h3 class="font-extrabold text-md lg:text-xl">
+                          Whiskey Tasting & Distillery Tour.
+                        </h3>
+                        <h3 class="font-extrabold text-md lg:text-xl">
+                          <a
+                            href=""
+                            class="text-[#e38509] underline font-semibold"
+                            >Learn More</a
+                          >
+                        </h3>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </section>
+
+              <!-- VALHALLA SOCIAL NETWORK SECTION  -->
+              <section>
+                <h3
+                  class="font-bold text-xs lg:text-2xl text-gray-800 pb-3 flex items-center gap-2"
+                >
+                  <span class="border-b-4 border-[#700000] pb-3 tracking-wide"
+                    >VALLHALLA
+                  </span>
+                  <span class="flex items-center gap-1 pb-3">
+                    SOCIAL NETWORK
+                  </span>
+                </h3>
+               
+                <div class="flex gap-5">
+                    <!-- FACEBOOK SVG ICON  -->
+                  <a href="">
+                    <svg
+                      width="30px"
+                      height="30px"
+                      viewBox="-5 0 20 20"
+                      version="1.1"
+                      xmlns="http://www.w3.org/2000/svg"
+                      xmlns:xlink="http://www.w3.org/1999/xlink"
+                      fill="#000000"
+                    >
+                      <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                      <g
+                        id="SVGRepo_tracerCarrier"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      ></g>
+                      <g id="SVGRepo_iconCarrier">
+                        <title>facebook [#700000176]</title>
+                        <desc>Created with Sketch.</desc>
+                        <defs></defs>
+                        <g
+                          id="Page-1"
+                          stroke="none"
+                          stroke-width="1"
+                          fill="none"
+                          fill-rule="evenodd"
+                        >
+                          <g
+                            id="Dribbble-Light-Preview"
+                            transform="translate(-385.000000, -7399.000000)"
+                            fill="#700000"
+                          >
+                            <g
+                              id="icons"
+                              transform="translate(56.000000, 160.000000)"
+                            >
+                              <path
+                                d="M335.821282,7259 L335.821282,7250 L338.553693,7250 L339,7246 L335.821282,7246 L335.821282,7244.052 C335.821282,7243.022 335.847593,7242 337.286884,7242 L338.744689,7242 L338.744689,7239.14 C338.744689,7239.097 337.492497,7239 336.225687,7239 C333.580004,7239 331.923407,7240.657 331.923407,7243.7 L331.923407,7246 L329,7246 L329,7250 L331.923407,7250 L331.923407,7259 L335.821282,7259 Z"
+                                id="facebook-[#700000176]"
+                              ></path>
+                            </g>
+                          </g>
+                        </g>
+                      </g></svg
+                  ></a>
+
+                  <!-- TWITER SVG ICON  -->
+                  <a href="">
+                    <svg
+                      width="30px"
+                      height="30px"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                      <g
+                        id="SVGRepo_tracerCarrier"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      ></g>
+                      <g id="SVGRepo_iconCarrier">
+                        <path
+                          fill-rule="evenodd"
+                          clip-rule="evenodd"
+                          d="M19.7828 3.91825C20.1313 3.83565 20.3743 3.75444 20.5734 3.66915C20.8524 3.54961 21.0837 3.40641 21.4492 3.16524C21.7563 2.96255 22.1499 2.9449 22.4739 3.11928C22.7979 3.29366 23 3.6319 23 3.99986C23 5.08079 22.8653 5.96673 22.5535 6.7464C22.2911 7.40221 21.9225 7.93487 21.4816 8.41968C21.2954 11.7828 20.3219 14.4239 18.8336 16.4248C17.291 18.4987 15.2386 19.8268 13.0751 20.5706C10.9179 21.3121 8.63863 21.4778 6.5967 21.2267C4.56816 20.9773 2.69304 20.3057 1.38605 19.2892C1.02813 19.0108 0.902313 18.5264 1.07951 18.109C1.25671 17.6916 1.69256 17.4457 2.14144 17.5099C3.42741 17.6936 4.6653 17.4012 5.6832 16.9832C5.48282 16.8742 5.29389 16.7562 5.11828 16.6346C4.19075 15.9925 3.4424 15.1208 3.10557 14.4471C2.96618 14.1684 2.96474 13.8405 3.10168 13.5606C3.17232 13.4161 3.27562 13.293 3.40104 13.1991C2.04677 12.0814 1.49999 10.5355 1.49999 9.49986C1.49999 9.19192 1.64187 8.90115 1.88459 8.71165C1.98665 8.63197 2.10175 8.57392 2.22308 8.53896C2.12174 8.24222 2.0431 7.94241 1.98316 7.65216C1.71739 6.3653 1.74098 4.91284 2.02985 3.75733C2.1287 3.36191 2.45764 3.06606 2.86129 3.00952C3.26493 2.95299 3.6625 3.14709 3.86618 3.50014C4.94369 5.36782 6.93116 6.50943 8.78086 7.18568C9.6505 7.50362 10.4559 7.70622 11.0596 7.83078C11.1899 6.61019 11.5307 5.6036 12.0538 4.80411C12.7439 3.74932 13.7064 3.12525 14.74 2.84698C16.5227 2.36708 18.5008 2.91382 19.7828 3.91825ZM10.7484 9.80845C10.0633 9.67087 9.12171 9.43976 8.09412 9.06408C6.7369 8.56789 5.16088 7.79418 3.84072 6.59571C3.86435 6.81625 3.89789 7.03492 3.94183 7.24766C4.16308 8.31899 4.5742 8.91899 4.94721 9.10549C5.40342 9.3336 5.61484 9.8685 5.43787 10.3469C5.19827 10.9946 4.56809 11.0477 3.99551 10.9046C4.45603 11.595 5.28377 12.2834 6.66439 12.5135C7.14057 12.5929 7.49208 13.0011 7.49986 13.4838C7.50765 13.9665 7.16949 14.3858 6.69611 14.4805L5.82565 14.6546C5.95881 14.7703 6.103 14.8838 6.2567 14.9902C6.95362 15.4727 7.65336 15.6808 8.25746 15.5298C8.70991 15.4167 9.18047 15.6313 9.39163 16.0472C9.60278 16.463 9.49846 16.9696 9.14018 17.2681C8.49626 17.8041 7.74425 18.2342 6.99057 18.5911C6.63675 18.7587 6.24134 18.9241 5.8119 19.0697C6.14218 19.1402 6.48586 19.198 6.84078 19.2417C8.61136 19.4594 10.5821 19.3126 12.4249 18.6792C14.2614 18.0479 15.9589 16.9385 17.2289 15.2312C18.497 13.5262 19.382 11.1667 19.5007 7.96291C19.51 7.71067 19.6144 7.47129 19.7929 7.29281C20.2425 6.84316 20.6141 6.32777 20.7969 5.7143C20.477 5.81403 20.1168 5.90035 19.6878 5.98237C19.3623 6.04459 19.0272 5.94156 18.7929 5.70727C18.0284 4.94274 16.5164 4.43998 15.2599 4.77822C14.6686 4.93741 14.1311 5.28203 13.7274 5.89906C13.3153 6.52904 13 7.51045 13 8.9999C13 9.28288 12.8801 9.5526 12.6701 9.74221C12.1721 10.1917 11.334 9.92603 10.7484 9.80845Z"
+                          fill="#700000"
+                        ></path>
+                      </g>
+                    </svg>
+                  </a>
+
+                  <!-- GOOGLE pLUS SGV ICON  -->
+                  <a href="">
+                    <svg
+                      width="30px"
+                      height="30px"
+                      viewBox="0 -0.5 25 25"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                      <g
+                        id="SVGRepo_tracerCarrier"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      ></g>
+                      <g id="SVGRepo_iconCarrier">
+                        <path
+                          d="M9.78353 7.74971C10.1976 7.73814 10.5239 7.39311 10.5123 6.97906C10.5007 6.565 10.1557 6.23873 9.74164 6.25029L9.78353 7.74971ZM5.50158 11.5L6.25132 11.52C6.25167 11.5067 6.25167 11.4933 6.25132 11.48L5.50158 11.5ZM9.76258 16L9.74164 16.7497C9.7556 16.7501 9.76957 16.7501 9.78353 16.7497L9.76258 16ZM14.0236 11.5L14.7733 11.48C14.7625 11.0737 14.43 10.75 14.0236 10.75V11.5ZM9.76258 10.75C9.34837 10.75 9.01258 11.0858 9.01258 11.5C9.01258 11.9142 9.34837 12.25 9.76258 12.25V10.75ZM19.3276 9.679C19.7418 9.679 20.0776 9.34321 20.0776 8.929C20.0776 8.51479 19.7418 8.179 19.3276 8.179V9.679ZM17.5016 8.179C17.0874 8.179 16.7516 8.51479 16.7516 8.929C16.7516 9.34321 17.0874 9.679 17.5016 9.679V8.179ZM17.5016 9.679C17.9158 9.679 18.2516 9.34321 18.2516 8.929C18.2516 8.51479 17.9158 8.179 17.5016 8.179V9.679ZM15.6756 8.179C15.2614 8.179 14.9256 8.51479 14.9256 8.929C14.9256 9.34321 15.2614 9.679 15.6756 9.679V8.179ZM16.7516 8.929C16.7516 9.34321 17.0874 9.679 17.5016 9.679C17.9158 9.679 18.2516 9.34321 18.2516 8.929H16.7516ZM18.2516 7C18.2516 6.58579 17.9158 6.25 17.5016 6.25C17.0874 6.25 16.7516 6.58579 16.7516 7H18.2516ZM18.2516 8.929C18.2516 8.51479 17.9158 8.179 17.5016 8.179C17.0874 8.179 16.7516 8.51479 16.7516 8.929H18.2516ZM16.7516 10.857C16.7516 11.2712 17.0874 11.607 17.5016 11.607C17.9158 11.607 18.2516 11.2712 18.2516 10.857H16.7516ZM9.74164 6.25029C6.90939 6.32941 4.67644 8.68761 4.75185 11.52L6.25132 11.48C6.19794 9.47505 7.77861 7.80571 9.78353 7.74971L9.74164 6.25029ZM4.75185 11.48C4.67644 14.3124 6.90939 16.6706 9.74164 16.7497L9.78353 15.2503C7.77861 15.1943 6.19794 13.5249 6.25132 11.52L4.75185 11.48ZM9.78353 16.7497C12.6158 16.6706 14.8487 14.3124 14.7733 11.48L13.2738 11.52C13.3272 13.5249 11.7466 15.1943 9.74164 15.2503L9.78353 16.7497ZM14.0236 10.75H9.76258V12.25H14.0236V10.75ZM19.3276 8.179H17.5016V9.679H19.3276V8.179ZM17.5016 8.179H15.6756V9.679H17.5016V8.179ZM18.2516 8.929V7H16.7516V8.929H18.2516ZM16.7516 8.929V10.857H18.2516V8.929H16.7516Z"
+                          fill="#700000"
+                        ></path>
+                      </g>
+                    </svg>
+                  </a>
+
+                  <!-- LINKEDIN SVG ICON -->
+                  <a href="">
+                     <svg
+                    width="30px"
+                    height="30px"
+                    viewBox="0 0 20 20"
+                    version="1.1"
+                    xmlns="http://www.w3.org/2000/svg"
+                    xmlns:xlink="http://www.w3.org/1999/xlink"
+                    fill="#5a1111"
+                    stroke="#5a1111"
+                  >
+                    <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                    <g
+                      id="SVGRepo_tracerCarrier"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    ></g>
+                    <g id="SVGRepo_iconCarrier">
+                      <title>linkedin [#700000161]</title>
+                      <desc>Created with Sketch.</desc>
+                      <defs></defs>
+                      <g
+                        id="Page-1"
+                        stroke="none"
+                        stroke-width="1"
+                        fill="none"
+                        fill-rule="evenodd"
+                      >
+                        <g
+                          id="Dribbble-Light-Preview"
+                          transform="translate(-180.000000, -7479.000000)"
+                          fill="#700000"
+                        >
+                          <g
+                            id="icons"
+                            transform="translate(56.000000, 160.000000)"
+                          >
+                            <path
+                              d="M144,7339 L140,7339 L140,7332.001 C140,7330.081 139.153,7329.01 137.634,7329.01 C135.981,7329.01 135,7330.126 135,7332.001 L135,7339 L131,7339 L131,7326 L135,7326 L135,7327.462 C135,7327.462 136.255,7325.26 139.083,7325.26 C141.912,7325.26 144,7326.986 144,7330.558 L144,7339 L144,7339 Z M126.442,7323.921 C125.093,7323.921 124,7322.819 124,7321.46 C124,7320.102 125.093,7319 126.442,7319 C127.79,7319 128.883,7320.102 128.883,7321.46 C128.884,7322.819 127.79,7323.921 126.442,7323.921 L126.442,7323.921 Z M124,7339 L129,7339 L129,7326 L124,7326 L124,7339 Z"
+                              id="linkedin-[#700000161]"
+                            ></path>
+                          </g>
+                        </g>
+                      </g>
+                    </g>
+                  </svg>
+                  </a>
+                </div>
+              </section>
+            </div>
+
+            <!-- RIGHT PORTION  -->
+            <div class="col-span-12 lg:col-span-3">
+              <!-- TITLE  -->
+              <h3
+                class="border-b-2 border-gray-300 font-bold text-2xl text-gray-800 pb-3"
+              >
+                <span
+                  class="border-b-2 border-[#700000] px-5 pb-3 tracking-wide"
+                  >SEARCH</span
+                >
+              </h3>
+
+              <!--  SEARCH INPUT -->
+              <div class="mt-3 flex items-center gap-0">
+                <input
+                  type="text"
+                  class="py-1.5 bg-gray-200 px-2 outline-none border w-full"
+                  placeholder="search"
+                  name="searchbar"
+                  id=""
+                />
+                <button
+                  class="text-[#f4f4f4] bg-[#700000] hover:bg-[#800000] px-6 py-1.5 font-semibold"
+                >
+                  Search
+                </button>
+              </div>
+
+              <!-- ADS BOX -->
+              <div
+                class="border border-4 border-[#e38609] text-[#e38609] w-full h-[250px] mt-10 flex flex-col items-center justify-center"
+              >
+                <h3 class="text-4xl font-semibold">300 x 250</h3>
+                <h3 class="font-bold text-2xl">Ad Size</h3>
+              </div>
+
+              <!-- NEIGHBORHOOD -->
+              <div class="mt-10 lg:mt-20">
+                <h3
+                  class="pb-2 px-3 border-b-2 border-gray-400 font-bold text-xl"
+                >
+                  BROOKLYN NEIGHBORHOOD
+                </h3>
+
+                <div>
+                  <div
+                    class="mt-4 text-[#e38509] text-lg lg:text-xl font-semibold flex flex-col"
+                  >
+                    <a href="" class="underline">Bath Beach</a>
+                    <a href="" class="underline">Bay Ridge</a>
+                    <a href="" class="underline">Badford-Stuyvesant</a>
+                    <a href="" class="underline">Bensonhurst</a>
+                    <a href="" class="underline">Bergen Beach</a>
+                    <a href="" class="underline">Boerum Hill</a>
+                    <a href="" class="underline">borough Park</a>
+                    <a href="" class="underline">Brighton Beach</a>
+                  </div>
+                  <div class="w-full shadow mt-2">
+                    <h3 class="flex flex justify-between items-center">
+                      <a href="" class="underline text-xl font-bold">
+                        More Neighborhoods
+                      </a>
+                      <svg
+                        fill=""
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="30"
+                        height="30"
+                        fill="#000000"
+                        viewBox="0 0 256 256"
+                      >
+                        <path
+                          d="M213.66,101.66l-80,80a8,8,0,0,1-11.32,0l-80-80A8,8,0,0,1,53.66,90.34L128,164.69l74.34-74.35a8,8,0,0,1,11.32,11.32Z"
+                        ></path>
+                      </svg>
+                    </h3>
+                  </div>
+                </div>
+              </div>
+
+              <!-- BAR TYPE  -->
+              <div class="mt-10 lg:mt-20">
+                <h3
+                  class="pb-2 px-3 border-b-2 border-gray-400 font-bold text-xl"
+                >
+                  BAR TYPE
+                  <span
+                    class="pb-2 h-2 bg-[#700000] border-b-2 border-[#700000] w-10"
+                  ></span>
+                </h3>
+
+                <div>
+                  <div
+                    class="mt-4 text-[#e38509] text-lg lg:text-xl font-semibold flex flex-col"
+                  >
+                    <a href="" class="underline">Categorie 1</a>
+                    <a href="" class="underline">Categorie 2</a>
+                    <a href="" class="underline">Categorie 3</a>
+                    <a href="" class="underline">Categorie 4</a>
+                    <a href="" class="underline">Categorie 5</a>
+                    <a href="" class="underline">Categorie 6</a>
+                    <a href="" class="underline">Categorie 7</a>
+                    <a href="" class="underline">Categorie 8</a>
+                  </div>
+                  <div class="w-full shadow mt-2">
+                    <h3 class="flex flex justify-between items-center">
+                      <a href="" class="underline text-xl font-bold">
+                        More Categorie
+                      </a>
+                      <svg
+                        fill=""
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="30"
+                        height="30"
+                        fill="#000000"
+                        viewBox="0 0 256 256"
+                      >
+                        <path
+                          d="M213.66,101.66l-80,80a8,8,0,0,1-11.32,0l-80-80A8,8,0,0,1,53.66,90.34L128,164.69l74.34-74.35a8,8,0,0,1,11.32,11.32Z"
+                        ></path>
+                      </svg>
+                    </h3>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+        </div>
+      </section>
+    </div>
+    <!--  BOTTOM SECTION   -->
+    <div
+      class="container mx-auto p-5 flex flex-col lg:flex-row items-center gap-5 lg:gap-10 mt-5 py-10"
+    >
+      <section class="lg:w-1/2 flex items-center">
+        <img
+          class="lg:w-[90%] lg:h-52 w-52"
+          src="../assets/Logo.png"
+          alt="Nyc-Thists logo"
+        />
+      </section>
+
+      <section class="text-white lg:w-1/2 w-full">
+        <h2 class="font-bold text-2xl">NYCThrist</h2>
+        <h4 class="font-semibold text-lg">A NEw York Bar Calture Guide</h4>
+        <p class="lg:mt-4 mt-2 text-lg">
+          NYCThirst is the bar calture guide for the five boroughs of New Yourk
+          City.We have a detailed page for every drinking establishment in New
+          York City.Our job is to give the user the best information we can
+          gather about a drinking establishment.
+        </p>
+        <p class="lg:mt-4 mt-2 text-lg">
+          We plan on being a hyper local business forward website.If you have
+          trivia night, we would like to tell our users about it.If you have a
+          drink special, our user will want to know if you get the latest craft
+          brew, we will tell people about it. A daily update of what is going on
+          in bar calture inthe five boroughs will appear on our site.
+        </p>
+      </section>
+    </div>
+
+    <!-- JAVASCRIPT -->
+    <script src="../js/utility.js"></script>
+  </body>
+</html>
