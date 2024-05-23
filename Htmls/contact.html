@@ -32,21 +32,7 @@
       rel="stylesheet"
     />
 
-    <!--Owl Carousel  -->
-    <link
-      href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css"
-      rel="stylesheet"
-    />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
-    />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"
-    />
-
-    <title>About Us-NYC-Thists</title>
+    <title>Contact Us-NYC-Thists</title>
   </head>
   <body class="bg-[#e38509]">
     <!-- HEADER SECTION  -->
@@ -517,7 +503,7 @@
     </header>
 
     <!-- HOME PAGE CONTENT SECTION -->
-    <div class="container mx-auto bg-[#f4f4f4] p-5">
+    <div class="container mx-auto bg-[#ffffff] p-5">
       <!-- ADVERTISMENT SECTION  -->
       <section
         class="w-[300px] h-[250px] md:w-[728px] lg:w-[970px] md:h-[90px] border border-black mx-auto flex justify-center items-center"
@@ -525,125 +511,90 @@
         <h3 class="">ADS</h3>
       </section>
 
-      <!-- ABOUT US SECTION  -->
-      <div class="p-8">
-        <section class="mb-8">
-          <!-- PAGE TITLE -->
-          <h1 class="text-3xl font-bold mb-4">About Us</h1>
-          <p class="text-base mb-4">
-            NYCThirst is the bar culture guide for the five boroughs of New York
-            City. We have a detailed page for every drinking establishment in
-            New York City. Our job is to give the user / visitor the best
-            information we can gather about a drinking establishment.
+      <!-- CONTACT  US SECTION  -->
+      <div
+        class="flex flex-col lg:flex-row lg:items-center justify-between px-4 py-8 mt-10"
+      >
+        <div class="w-full lg:w-1/2 space-y-4">
+          <!-- PAGE TITLE  -->
+          <h1 class="text-3xl font-bold">Contact Us</h1>
+          <p class="text-gray-700 lg:text-lg">
+            If you have any questions or need help, please fill out the form
+            below. We do our best to respond within 1 business day.
           </p>
-          <p class="text-base mb-4">
-            We plan on being a hyper local business forward website. If you have
-            trivia night, we would like to tell our users about it. If you have
-            a drink special, our user will want to know. If you get the latest
-            craft brew, we will tell people about it. A daily update of what is
-            going on in bar culture in the five boroughs will appear on our
-            site.
-          </p>
-        </section>
+          <form>
+            <div class="flex flex-col space-y-2">
+              <input
+                placeholder="Enter your full name"
+                type="text"
+                id="name"
+                name="name"
+                class="w-full px-4 py-2 rounded-md border border-gray-300 focus:outline-none focus:ring-1 focus:ring-[#700000]"
+              />
 
-        <section class="mb-8">
-          <h2 class="text-2xl font-bold mb-2">
-            What do we mean by drinking establishment?
-          </h2>
-          <p class="text-base mb-4">
-            Pubs, Taverns, Inns, Hotel bars, College bars, Sports bars, Irish
-            bars, Dive bars, Beer Halls, Brewpubs, Cocktail lounges, Wine bars,
-            Breweries, Tap rooms, Beer Gardens, Pool Bars, Beach Bars, Gastro
-            Pub, Public Houses, Brew Houses and many other categories are what
-            we consider drinking establishments.
-          </p>
-          <p class="text-base mb-4">
-            As a general rule we ask three questions to determine if an
-            establishment makes it on this site. Answer yes to the following
-            three criteria and it is good to go:
-          </p>
-          <ul class="list-disc list-inside space-y-2 pl-4">
-            <li>
-              Can you enter without having to wait in a line and / or needing a
-              reservation?
-            </li>
-            <li>Can you sit and have a drink?</li>
-            <li>Can you socialize with a stranger, if you chose to?</li>
-          </ul>
-        </section>
+              <input
+                placeholder="Enter your email address"
+                type="email"
+                id="email"
+                name="email"
+                class="w-full px-4 py-2 rounded-md border border-gray-300 focus:outline-none focus:ring-1 focus:ring-[#700000]"
+              />
 
-        <section class="mb-8">
-          <h2 class="text-2xl font-bold mb-2">What is Bar Culture?</h2>
-          <p class="text-base mb-4">
-            Are you going to a bar to watch the latest sports team win, then
-            celebrate with other fans? Are you dropping by your local breweries
-            tap room to try their latest sour, comparing tasting notes, then
-            sitting back in judgment of it? Do you spend every other Thursday at
-            your local pub with a group of friends, searching your brain for
-            that elusive answer to a trivia question that will win your team the
-            prize? These are a few examples of bar culture. Simply put a
-            gathering with like minds and sharing a drink.
-          </p>
-        </section>
+              <input
+                placeholder="Enter a subject"
+                type="text"
+                id="subject"
+                name="subject"
+                class="w-full px-4 py-2 rounded-md border border-gray-300 focus:outline-none focus:ring-1 focus:ring-[#700000]"
+              />
 
-        <section class="mb-8">
-          <h2 class="text-2xl font-bold mb-2">What NYCThirst is not.</h2>
-          <p class="text-base mb-4">
-            We are not a review site. We do not have an opinion about the place
-            you chose to drink at. We don’t have an opinion about what you
-            should be drinking. This is not the website to tell us you had a
-            good or bad time at a place you chose to visit. This website is
-            going to be a judgement free zone. If you are looking for a top ten
-            list of anything this is not the site for you. Anyone who is old
-            enough to drink is also old enough to decide for themselves what
-            they enjoy or not enjoy.
-          </p>
-        </section>
+              <select
+                id="category"
+                name="category"
+                class="w-full px-4 py-2 rounded-md border border-gray-300 focus:outline-none focus:ring-1 focus:ring-[#700000]"
+              >
+                <option value="">Select a category</option>
+                <option value="support">Support</option>
+                <option value="sales">Sales</option>
+                <option value="other">Other</option>
+              </select>
 
-        <section class="mb-8">
-          <h2 class="text-2xl font-bold mb-2">Addiction / Alcoholism</h2>
-          <p class="text-base mb-4">
-            Please Drink Responsibly, your physical and mental health is very
-            important and should be taken seriously. If you find yourself binge
-            drinking or you start displaying a pattern of drinking that results
-            in significant distress, you likely suffer from alcohol use disorder
-            otherwise known as Alcoholism. If you think you have a problem
-            please seek help. In NYC there is a 24 hour/seven days per week
-            information and referral number, call
-            <span class="font-bold">1-888-NYC-WELL (1-888-692-9355)</span>.
-          </p>
-          <p class="text-base mb-2">
-            For more information about Alcoholism please visit the
-            <a
-              href="https://www.mayoclinic.org/diseases-conditions/alcohol-use-disorder/symptoms-causes/syc-20369243"
-              class="text-blue-600 underline"
-              >Mayo Clinic website</a
-            >:
-          </p>
-          <p class="text-blue-600 mb-4">
-            https://www.mayoclinic.org/diseases-conditions/alcohol-use-disorder/symptoms-causes/syc-20369243
-          </p>
-          <p class="text-base mb-2">
-            Or visit the
-            <a
-              href="https://www1.nyc.gov/site/doh/health/health-topics/alcohol-and-drug-use-services.page"
-              class="text-blue-600 underline"
-              >New York City Alcohol and Drug Use</a
+              <textarea
+                maxlength="40"
+                placeholder="Enter your message"
+                id="message"
+                name="message"
+                rows="4"
+                class="w-full px-4 py-2 rounded-md border border-gray-300 focus:outline-none focus:ring-1 focus:ring-[#700000]"
+              ></textarea>
+              <p class="text-sm text-gray-400 ms-1">
+                0 / 40 characters minimum
+              </p>
+            </div>
+            <button
+              type="submit"
+              class="py-2 w-full px-4 bg-[#232d39] hover:bg-black transition duration-300 text-white font-medium rounded-md focus:outline-none focus:ring-1 focus:ring-black mt-4"
             >
-            services page:
-          </p>
-          <p class="text-blue-600">
-            https://www1.nyc.gov/site/doh/health/health-topics/alcohol-and-drug-use-services.page
-          </p>
-        </section>
+              Send Message
+            </button>
+          </form>
+        </div>
+        <div class="hidden lg:flex justify-center items-center w-1/2">
+          <img
+            class="h-full"
+            src="../assets/contact.png"
+            alt="QR Code"
+            class="w-20 h-20"
+          />
+        </div>
       </div>
     </div>
 
     <!--  BOTTOM SECTION   -->
     <div
-      class="container mx-auto p-5 flex flex-col lg:flex-row items-center lg:gap-10 mt-5 py-10"
+      class="container mx-auto p-5 flex flex-col lg:flex-row items-center gap-10 mt-5 py-10"
     >
-      <section class="w-1/2">
+      <section class="lg:w-1/2">
         <img
           class="lg:w-[90%] lg:h-52 w-52"
           src="../assets/Logo.png"
@@ -651,16 +602,16 @@
         />
       </section>
 
-      <section class="text-white w-1/2">
+      <section class="text-white lg:w-1/2">
         <h2 class="font-bold text-2xl">NYCThrist</h2>
         <h4 class="font-semibold text-lg">A NEw York Bar Calture Guide</h4>
-        <p class="mt-4 text-lg">
+        <p class="mt-4">
           NYCThirst is the bar calture guide for the five boroughs of New Yourk
           City.We have a detailed page for every drinking establishment in New
           York City.Our job is to give the user the best information we can
           gather about a drinking establishment.
         </p>
-        <p class="mt-4 text-lg">
+        <p class="mt-4">
           We plan on being a hyper local business forward website.If you have
           trivia night, we would like to tell our users about it.If you have a
           drink special, our user will want to know if you get the latest craft
