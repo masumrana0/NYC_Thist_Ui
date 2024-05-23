@@ -84,7 +84,6 @@ const toogleMobileNavbarDropdown3 = () => {
   }
 };
 
-
 // Owl carousel functionlities
 $(document).ready(function () {
   const owl = $(".owl-carousel").owlCarousel({
@@ -93,7 +92,7 @@ $(document).ready(function () {
     responsiveClass: true,
     nav: true,
     autoplay: true,
-    autoplayTimeout: 3000,
+    autoplayTimeout: 4000,
     autoplayHoverPause: true,
     smartSpeed: 600,
     navText: [
